@@ -1,0 +1,171 @@
+/* colors */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: large;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* green: */
+  --greenlight: #5aa47b63;
+  --greendark: #35503e;
+  --greendarker: #0d2e1f;
+  --greendarkest: #022619;
+  --greengrey: #6b806f;
+  /* blue: */
+  --bluelight: #0145a4;
+  --bluedark: #05152E;
+  --bluedarker: #1F2937;
+  --bluedarkest: #001E3C;
+  --bluegrey: #6B7280;
+  /* warm */
+  --yellogreen: #76c92d;
+  --greengrey: #a1b37b;
+  --yellow: #e7b416;
+  --yellow-oronge: #db7b2b;
+  --yello-red: #cc7032;
+  /* mixed */
+  --blau: #100089;
+  --blaulight: #218dcb;
+  --red-yellow: #db5a2b;
+  --red: #cc3232;
+  /* speciel */
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --light: #eeeeee;
+}
+
+#header-homepage {
+  width: 100vw;
+  height: 6vh;
+  flex-shrink: 0;
+  background-color: var(--bluedarkest);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  justify-content: space-around;
+  align-items: center;
+  grid-column-gap: 10vw;
+  min-width: 60vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* #main-components{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid white;
+} */
+
+#header-logo {
+  text-align: left;
+  margin-left: 2vw;
+  width: min(5vw, 100px);
+  align-items: center;
+  font-size: 27px;
+  font-weight: bolder;
+}
+
+#search-components {
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr;
+  height: fit-content;
+  width: min(20vw, 400px);
+  align-items: center;
+  font-weight: bolder;
+  color: white;
+  position: relative;
+}
+
+.search {
+  height: 4vh;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0;
+}
+
+#search {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+#search-field{
+  min-width: 20vw;
+}
+
+#search-btn {
+  height: min(5vh, 100px);
+}
+
+#search-field:hover {}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+#header-navigation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: min(30vw, 400px);
+  align-items: center;
+  font-weight: bolder;
+  color: white;
+}
+
+/* styling only for popup window in script.js*/
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bluedarkest);
+  opacity: 80%;
+  border: 1px solid --bluedarkest;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.search-components {
+  position: relative;
+}
+
+.search-components:hover .popup {
+  display: grid;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px)  {
+
+    html{
+      font-size: 2vw;
+    }
+
+    #search {
+      display: none;
+    }
+    #header-navigation{
+      /* must be changed to icon */
+    }
+}
