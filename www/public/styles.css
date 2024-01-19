@@ -112,8 +112,6 @@ a {
   color: white;
 }
 
-
-
 #header-navigation {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -122,6 +120,12 @@ a {
   font-weight: bolder;
   color: white;
 }
+#home-navigation {
+  display: none;
+  background-color: var(--bluedarkest);
+  color: white;
+}
+
 
 /* styling only for popup window in script.js*/
 
@@ -154,18 +158,21 @@ a {
 
 
 
-
-
 @media screen and (max-width: 768px)  {
 
     html{
       font-size: 2vw;
     }
 
-    #search {
-      display: none;
-    }
     #header-navigation{
+      display: none;
       /* must be changed to icon */
+    }
+
+    #home-navigation {
+      display: grid;
+      justify-content: end;
+      align-items: end;
+      margin-right: 5px;
     }
 }

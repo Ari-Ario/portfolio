@@ -23,4 +23,9 @@
         <a class="navigation">Contact</a>
     </section>
 
+    <!-- Responsive Home icon for cell-phone, smaller screens etc -->
+    <section id="home-navigation">
+        HH
+    </section>
+
 </section>
