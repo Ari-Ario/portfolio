@@ -14,7 +14,11 @@ if (session_status() === PHP_SESSION_NONE){
 </head>
 <body>
     <?php include_once "./components/header.php" ?>
-    
+
+    <?php include_once "./components/main.php" ?>
+
+    <?php include_once "./components/footer.php" ?>
+
     <script src="script.js"></script>
 </body>
 </html>
