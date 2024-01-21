@@ -28,3 +28,7 @@ function openFooterCellphone(){
     const footer =document.getElementById('footer-navigation');
     footer.style.display= 'block';
 }
+
+function openHome() {
+    location.href = '/public/index.php'
+}

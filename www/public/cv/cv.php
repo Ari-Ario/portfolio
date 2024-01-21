@@ -1,13 +1,16 @@
-<link rel="stylesheet" href="styles-cv.css">
-<link rel="stylesheet" href="./public/styles.css">
-
+<link rel="stylesheet" type="text/css" href="styles-cv.css">
+<link rel="stylesheet" type="text/css" href="/../styles.css">
 
 <section id="document">
-        <!-- <?php include_once "./public/components/header.php" ?> -->
+    <?php 
+        $path = $_SERVER['DOCUMENT_ROOT'];
+        $path .= "/components/header.php";
+        include_once($path);
+    ?>
     <section id="body">
 
         <section id="cv">
-            <header><b>Curriculum Vitae</b></header>
+            <section id="above"><b>Curriculum Vitae</b></section>
             <nav>
                 <ul id="nav">
                     <li><a href="#experience">Experience</a></li>
@@ -59,7 +62,7 @@
 
                     <h2>Refrences</h2>
                 </aside>
-                <main id="main" class="column">
+                <main id="main-cont" class="column">
                     <section id="personal">
                         <p>Mostafanejad Ismail
                         <br>Buchzelgweg 4
@@ -72,17 +75,12 @@
                     </section>
                     <section id="experience">
                         <p><strong>Web Development</strong></p>
-                        <p><strong>1st and 2nd Level ICT Support</strong>
-                        <ul>
-                            <li>Incidents</li>
-                            <li>Instalations</li>
-                            <li>Workplaces</li>
-                            <li>Reparations</li>
-                        </ul></p>
+                        <p><strong>1st and 2nd Level ICT Support</strong></p>
+                        <p>Incidents, Instalations, Workplaces, Reparations</p>
                         <p>
-                            Columnist, Surprise Magazin
+                            Filmmaker and Columnist
                             <br>
-                            link: <a href="https://surprise.ngo/angebote/strassenmagazin/archiv/challenge-league/">challenge-league</a>
+                            Link: <a href="https://www.swissfilms.ch/de/person/ismail-mostafanejad/76C265AFDC9544428C2C91D0F558A780">Swiss Films</a>
                         </p>
                         <p>
                             Freelance Journalist
@@ -110,7 +108,7 @@
                     </section>
                     <section id="languages">
                         <p style="padding-top: 20px;">Very good</p>
-                        <p>Very good</p>
+                        <p >Very good</p>
                         <p>Good</p>
                         <p>Mother language</p>
                         <p>Good</p>
@@ -131,9 +129,20 @@
                         <p>Contact me</p>
                     </section>
                 </main>
-            </section>
+            </section>    
             <footer id="footer">&copy; 2024</footer>
+
+            <!-- <section id="back-home" onclick="openHome()">
+                BACK
+            </section> -->
         </section>
+
     </section>
+
 </section>
+<?php 
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "/components/footer.php";
+    include_once($path);
+?>
 

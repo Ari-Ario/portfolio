@@ -1,56 +1,38 @@
 /* colors */
 
-:root {
-    /* green: */
-    --greenlight: #5aa47b63;
-    --greendark: #35503e;
-    --greendarker: #0d2e1f;
-    --greendarkest: #022619;
-    --greengrey: #6b806f;
-    /* blue: */
-    --bluelight: #0145a4;
-    --bluedark: #05152E;
-    --bluedarker: #1F2937;
-    --bluedarkest: #001E3C;
-    --bluegrey: #6B7280;
-    /* warm */
-    --yellogreen: #76c92d;
-    --greengrey: #a1b37b;
-    --yellow: #e7b416;
-    --yellow-oronge: #db7b2b;
-    --yello-red: #cc7032;
-    /* mixed */
-    --blau: #100089;
-    --blaulight: #218dcb;
-    --red-yellow: #db5a2b;
-    --red: #cc3232;
-    /* speciel */
-    --pink: #ec4899;
-    --purple: #8b5cf6;
-    --light: #eeeeee;
-  }
-
   #document {
     display: block;
   }
 
  #body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: var(--light);
+    background-color: white;
     color: var(--bluedarkest);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
+    top: 10vh;
  }
 
+ #above {
+   padding: 8px;
+   width: 1000px;
+   text-align: center;
+   background-color: var(--bluegrey);
+   opacity: .7;
+}
+
  #cv {
-    width: 1000px;
+    max-width: 1000px;
+    position: absolute;
+    top: 8vh;
+    z-index: -1;
  }
  nav {
    position: sticky;
-   top: 10px;
+   background-color: var(--light);
  }
 
  ul {
@@ -70,29 +52,31 @@
    text-decoration: none;
  }
 
- header {
-    padding: 8px;
-    text-align: center;
-    background-color: var(--bluegrey);
-    opacity: .7;
- }
-
  #content {
    display: flex;
    justify-content: center;
    align-items: center;
+   max-width: 1000px;
  }
  .column {
    height: 2200px;
+ }
+
+ #content {
+   max-width: 1000px;
+   margin: 0;
+   padding: 0;
  }
 
 #aside {
    display: block;
    text-align: end;
    padding-right: 20px;
-   width: 30%;
+   margin: 0;
+   width: 300px;
    font-size: 18px;
    background-color: var(--bluegrey);
+   border: 1px solid var(--bluedarkest);
 }
 
 img {
@@ -100,11 +84,13 @@ img {
    padding: 40px 30px 38px 40px;
 }
 
-#main {
-    width: 70%;
-    background-color: white;
-    padding-left: 20px;
-    font-size: 18px;
+#main-cont {
+   width: 700px;
+   background-color: white;
+   padding-left: 20px;
+   font-size: 18px;
+   margin: o;
+   border: 1px solid var(--bluedarkest);
 }
 #personal {
    display: flex;
@@ -116,6 +102,10 @@ img {
 }
 #experience {
    padding-top: 130px;
+}
+
+#ict-exp-mob {
+   display: none;
 }
 .studies {
    padding-bottom: 0;
@@ -146,4 +136,22 @@ img {
    padding-top: 5px;
    background-color: var(--bluegrey);
    opacity: .7;
+}
+
+
+
+@media screen and (max-width: 768px)  {
+
+   #body{
+      width: 100vw;
+     font-weight: bolder;
+   }
+
+   #ict-exp {
+      display: none;
+   }
+   #ict-exp-mob {
+      display: block;
+   }
+
 }

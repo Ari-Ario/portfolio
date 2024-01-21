@@ -191,7 +191,7 @@ a {
 /* footer */
 
 #footer-container {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   color: var(--bluedarkest);
