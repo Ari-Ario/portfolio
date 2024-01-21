@@ -11,8 +11,8 @@
 
         <section id="cv">
             <section id="above"><b>Curriculum Vitae</b></section>
-            <nav>
-                <ul id="nav">
+            <nav class="nav">
+                <ul id="ul">
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#studies">Studies</a></li>
                     <li><a href="#languages">Lagusages</a></li>
@@ -138,7 +138,7 @@
         </section>
 
     </section>
-
+    <script src="../script.js"></script>
 </section>
 <?php 
     $path = $_SERVER['DOCUMENT_ROOT'];

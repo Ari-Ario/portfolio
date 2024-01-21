@@ -19,7 +19,8 @@ if (session_status() === PHP_SESSION_NONE){
     </section>
 
     <section>
-        <?php include_once "./components/main.php" ?>
+        <?php include_once "./components/about.php" ?>
+
     </section>
 
     <section>

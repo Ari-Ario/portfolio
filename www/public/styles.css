@@ -15,7 +15,7 @@
   --bluegrey: #6B7280;
   /* warm */
   --yellogreen: #76c92d;
-  --greengrey: #a1b37b;
+  --greengrey: #8b907f;
   --yellow: #e7b416;
   --yellow-oronge: #db7b2b;
   --yello-red: #cc7032;
@@ -40,6 +40,7 @@ body {
 }
 
 #header-homepage {
+  background-color: var(--light);
   color: var(--bluedarkest);
   width: 100vw;
   height: 8vh;
@@ -59,10 +60,12 @@ body {
 }
 
 #header-logo {
-  text-align: left;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
   margin-left: 2vw;
   width: min(5vw, 100px);
-  align-items: center;
   font-size: 27px;
   font-weight: bolder;
 }
@@ -71,7 +74,7 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: relative; 
 
 }
 
@@ -146,14 +149,14 @@ a {
 
 /* --------------------------- */
 
-#about-navigation {
-  height: min(6vh, 400px);
-  width: fit-content;
-  padding: 0 1vw 0 1vw;
+#cv-navigation {
   display: grid;
   justify-content: center;
   align-items: center;
-  margin-right: 2vw;
+  position: relative; 
+  height: min(6vh, 400px);
+  width: fit-content;
+  padding: 0 1vw 0 1vw;
   border-radius: 8px;
   font-weight: bolder;
   background-color: var(--bluegrey);
@@ -161,6 +164,7 @@ a {
 }
 #cv-link {
   height: min(5vh, 400px);
+  min-width: 5vw;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -245,6 +249,45 @@ a {
 }
 
 
+/* about styling */
+
+#bars {
+  display: grid;
+  justify-content: left;
+  align-items: center;
+  grid-template-rows: 10(1fr);
+  gap: 1vh;
+  top: 200px;
+  left: 400px;
+  width: 60vw;
+  height: 50vh;
+  padding: 1vh;
+  background-color: var(--greengrey);
+}
+
+.bar {
+  display: block;
+  text-align: left;
+  width: 60vw;
+
+  min-width: 50vw;
+  background-color: var(--bluegrey);
+}
+
+.bar-fill {
+  background-color: var(--blau);
+}
+
+.grid-bar {
+  display: inline-block;
+  text-align: left;
+  width: 100px;
+  background-color: var(--bluedarkest);
+  color: var(--light);
+}
+
+
+
 
 @media screen and (max-width: 768px)  {
 
@@ -255,6 +298,9 @@ a {
     #header-navigation{
       display: none;
       /* must be changed to icon */
+    }
+    #cv-navigation {
+      min-width: 8vw;
     }
 
     #main {
@@ -270,7 +316,7 @@ a {
       max-width: 90vw;
     }
 
-    #home-navigation {
+    #menu-navigation {
       height: min(6vh, 400px);
       display: grid;
       align-items: center;
@@ -283,23 +329,25 @@ a {
     }
 
     #footer-container {
+      display: grid;
+      align-items: center;
+      justify-content: center;
       width: 100vw;
       left: 0;
+      bottom: 0;
     }
 
     #footer-navigation {
       display: none;
-      text-align: center;    
-      width: 100vw;
-      height: 50vh;
+      text-align: center;
+      height: max-content;
       background-color: var(--bluedarker);
       color: var(--bluedarkest);
       opacity: .7;
       border-radius: 8px ;
       font-size: larger;
       font-weight: bold;
-      top: 50vh;
-      left: 0;
+      bottom: 0;
       padding: 1vh;
     }
 }

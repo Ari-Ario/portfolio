@@ -23,10 +23,10 @@ function closePopup() {
 }
 
 function openFooterCellphone(){
-    const home = document.getElementById('home-navigation');
+    const home = document.getElementById('menu-container');
     home.style.display= 'none';
     const footer =document.getElementById('footer-navigation');
-    footer.style.display= 'block';
+    footer.style.display= 'grid';
 }
 
 function openHome() {

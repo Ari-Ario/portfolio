@@ -30,12 +30,12 @@
     top: 8vh;
     z-index: -1;
  }
- nav {
+ .nav {
    position: sticky;
    background-color: var(--light);
  }
 
- ul {
+ #ul {
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -79,7 +79,7 @@
    border: 1px solid var(--bluedarkest);
 }
 
-img {
+#img {
    height: 300px;
    padding: 40px 30px 38px 40px;
 }
