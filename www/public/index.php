@@ -13,11 +13,18 @@ if (session_status() === PHP_SESSION_NONE){
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <?php include_once "./components/header.php" ?>
+    <section >
+        <?php include_once "./components/header.php" ?>
+    </section>
 
-    <?php include_once "./components/main.php" ?>
+    <section>
+        <?php include_once "./components/main.php" ?>
+    </section>
 
-    <?php include_once "./components/footer.php" ?>
+    <section>
+        <?php include_once "./components/footer.php" ?>
+
+    </section>
 
     <script src="script.js"></script>
 </body>

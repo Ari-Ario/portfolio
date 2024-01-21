@@ -16,7 +16,7 @@
     
     <!-- navigator section -->
     <section id="about-navigation">
-        <a id="about-cv">About/CV</a>
+        <a href="cv/cv.php" id="cv-link">CV/About</a>
     </section>
 
 

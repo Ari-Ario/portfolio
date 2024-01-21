@@ -1,8 +1,8 @@
 <section id="main">
     <section class="main-content">
-        ZZZZZZZZZ
+        <img src="/images/Iconsmind-Outline-HD-Video.512.png" alt="" id="macbook-one">
     </section>
     <section class="main-content">
-        YYYYYYYYY
+        <img src="/images/Iconsmind-Outline-HD-Video.512.png" alt="" id="macbook-two">
     </section>
 </section>

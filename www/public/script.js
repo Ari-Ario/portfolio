@@ -21,3 +21,10 @@ function closePopup() {
   isMouseOverPopup = false;
   hidePopup();
 }
+
+function openFooterCellphone(){
+    const home = document.getElementById('home-navigation');
+    home.style.display= 'none';
+    const footer =document.getElementById('footer-navigation');
+    footer.style.display= 'block';
+}

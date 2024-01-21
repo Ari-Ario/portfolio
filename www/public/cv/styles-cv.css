@@ -1,0 +1,149 @@
+/* colors */
+
+:root {
+    /* green: */
+    --greenlight: #5aa47b63;
+    --greendark: #35503e;
+    --greendarker: #0d2e1f;
+    --greendarkest: #022619;
+    --greengrey: #6b806f;
+    /* blue: */
+    --bluelight: #0145a4;
+    --bluedark: #05152E;
+    --bluedarker: #1F2937;
+    --bluedarkest: #001E3C;
+    --bluegrey: #6B7280;
+    /* warm */
+    --yellogreen: #76c92d;
+    --greengrey: #a1b37b;
+    --yellow: #e7b416;
+    --yellow-oronge: #db7b2b;
+    --yello-red: #cc7032;
+    /* mixed */
+    --blau: #100089;
+    --blaulight: #218dcb;
+    --red-yellow: #db5a2b;
+    --red: #cc3232;
+    /* speciel */
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+    --light: #eeeeee;
+  }
+
+  #document {
+    display: block;
+  }
+
+ #body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--light);
+    color: var(--bluedarkest);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+ }
+
+ #cv {
+    width: 1000px;
+ }
+ nav {
+   position: sticky;
+   top: 10px;
+ }
+
+ ul {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   list-style-type: none;
+   padding-left: 20px;
+   margin: 0;
+   text-decoration: none;
+ }
+
+ li {
+   padding-right: 20px;
+ }
+ a {
+   text-decoration: none;
+ }
+
+ header {
+    padding: 8px;
+    text-align: center;
+    background-color: var(--bluegrey);
+    opacity: .7;
+ }
+
+ #content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .column {
+   height: 2200px;
+ }
+
+#aside {
+   display: block;
+   text-align: end;
+   padding-right: 20px;
+   width: 30%;
+   font-size: 18px;
+   background-color: var(--bluegrey);
+}
+
+img {
+   height: 300px;
+   padding: 40px 30px 38px 40px;
+}
+
+#main {
+    width: 70%;
+    background-color: white;
+    padding-left: 20px;
+    font-size: 18px;
+}
+#personal {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding-top: 140px;
+   padding-left: 80px;
+   margin-left: 0;
+}
+#experience {
+   padding-top: 130px;
+}
+.studies {
+   padding-bottom: 0;
+   margin-bottom: 0px;
+   margin-top: 17px;
+}
+#studies {
+   padding-top: 55px;
+}
+.languages {
+   padding-top: 15px;
+   margin: 0;
+}
+#languages {
+   padding-top: 50px;
+}
+#ict {
+   padding-top: 35px;
+}                 
+#activity {
+   padding-top: 30px;
+   padding-bottom: 5px;
+}
+
+#footer {
+   display: flex;
+   justify-content: center;
+   padding-top: 5px;
+   background-color: var(--bluegrey);
+   opacity: .7;
+}

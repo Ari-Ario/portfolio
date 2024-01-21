@@ -112,6 +112,7 @@ body {
 
 a {
   text-decoration: none;
+  max-height: fit-content;
   color: var(--bluedarkest);
 }
 
@@ -147,6 +148,8 @@ a {
 
 #about-navigation {
   height: min(6vh, 400px);
+  width: fit-content;
+  padding: 0 1vw 0 1vw;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -156,8 +159,11 @@ a {
   background-color: var(--bluegrey);
   color: var(--bluedarkest);
 }
-#about-cv {
-  text-align: center;
+#cv-link {
+  height: min(5vh, 400px);
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 /* main body */
@@ -170,12 +176,15 @@ a {
   top: 15vh;
 }
 .main-content {
+  color: var(--light);
   text-align: center;
   margin : 20px;
-  height: 400px;
-  width: 400px;
-  background-color: var(--bluedarkest);
-  opacity: 0.5;
+
+}
+
+#macbook-one, #macbook-two {
+  height: max-content;
+  width: fit-content;
 }
 
 
@@ -215,11 +224,11 @@ a {
   font-size: large;
   font-weight: bold;
   margin: 0;
-  padding: 0 2px 0 2px;
+  padding: 1vh;
 }
 
 .navigation {
-  height: min(5vh, 400px);
+  height: min(6vh, 400px);
   display: grid;
   align-items: center;
   justify-content: center;
@@ -247,17 +256,50 @@ a {
       display: none;
       /* must be changed to icon */
     }
-    #footer-navigation {
-      display: none;
+
+    #main {
+      position: relative;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      max-width: 90vw;
+      top: 6vh;
     }
+
+    img {
+      max-width: 90vw;
+    }
+
     #home-navigation {
-      height: min(5vh, 400px);
+      height: min(6vh, 400px);
       display: grid;
       align-items: center;
       justify-content: center;
+      font-weight: bold;
       margin: 2px;
       padding: 0 2px 0 2px;
       border-radius: 8px ;
       background-color: var(--bluegrey);
+    }
+
+    #footer-container {
+      width: 100vw;
+      left: 0;
+    }
+
+    #footer-navigation {
+      display: none;
+      text-align: center;    
+      width: 100vw;
+      height: 50vh;
+      background-color: var(--bluedarker);
+      color: var(--bluedarkest);
+      opacity: .7;
+      border-radius: 8px ;
+      font-size: larger;
+      font-weight: bold;
+      top: 50vh;
+      left: 0;
+      padding: 1vh;
     }
 }

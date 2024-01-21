@@ -7,7 +7,7 @@
     </section>
 
     <!-- Responsive Home icon for cell-phone, smaller screens etc -->
-    <section id="home-navigation" onclick="">
-        Menu
+    <section id="home-navigation" onclick="openFooterCellphone()">
+        MENU
     </section>
 </section>
