@@ -2,8 +2,8 @@
     <section id="footer-navigation">
             <a class="navigation" href="/index.php">Home</a>
             <a class="navigation" href="/">work</a>
-            <a class="navigation" href="./about/about.php">about</a>
-            <a class="navigation">Contact</a>
+            <a class="navigation" href="/about/about.php">about</a>
+            <a class="navigation" href="/contact/contact.php">Contact</a>
     </section>
 
     <!-- Responsive Home icon for cell-phone, smaller screens etc -->

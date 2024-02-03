@@ -13,7 +13,7 @@ if (session_status() === PHP_SESSION_NONE){
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body>
+<body id="body-home">
     <header >
         <?php include_once "./components/header.php" ?>
 </header>

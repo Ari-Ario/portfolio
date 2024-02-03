@@ -30,7 +30,7 @@
   --light: #eeeeee;
 }
 
-body {
+#body-home {
   font-family: 'Courier New', Courier, monospace;
   background-color: var(--light);
   color: var(--bluedarkest);
@@ -108,7 +108,7 @@ body {
 
 #search-btn {
   height: min(6vh, 400px);
-  width: min(4vw, 400px);
+  width: min(8vw, 400px);
   font-size: large;
   font-weight: bold;
   color: var(--bluedarkest);
@@ -148,7 +148,7 @@ a {
   
 }
 
-/* footer--------------------------- */
+/* header RESUME--------------------------- */
 
 #cv-navigation {
   display: grid;
@@ -158,17 +158,44 @@ a {
   height: min(6vh, 400px);
   width: fit-content;
   padding: 0 1vw 0 1vw;
+  margin: 0;
   border-radius: 8px;
   font-weight: bolder;
   background-color: var(--bluegrey);
   color: var(--bluedarkest);
 }
-#cv-link {
+/* #cv-link {
   height: min(5vh, 400px);
   min-width: 5vw;
   display: grid;
   align-items: center;
   justify-content: center;
+} */
+
+.cv {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  color: var(--light);
+  background-color: var(--bluedarkest);
+  opacity: 80%;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1;
+}
+.cv-container:hover .cv-popup {
+  display: block;
+}
+
+#lebenslauf-de{
+  margin-top: 10px;
+}
+
+.cv-link {
+  color: var(--light);
 }
 
 /* main body------------------------- */
@@ -314,16 +341,15 @@ a {
 
 @media screen and (max-width: 768px)  {
 
-    html{
+    /* html{
       font-size: 2vw;
     }
-
+ */
 
     /* header ------------------ */
 
     #header-navigation{
       display: none;
-      /* must be changed to icon */
     }
     #cv-navigation {
       min-width: 8vw;
@@ -340,7 +366,6 @@ a {
 
     #header-homepage {
       padding: 0 2vw 0 5vw;
-      max-width: 90vw;
     }
     #search-btn {
       height: min(6vh, 400px);
@@ -416,6 +441,9 @@ a {
       min-width: 60vw;
     }
     #computer-content #arts-content {
+      width: 90vw;
+    }
+    .bar {
       width: 90vw;
     }
 }

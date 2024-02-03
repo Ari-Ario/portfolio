@@ -22,6 +22,30 @@ function closePopup() {
   hidePopup();
 }
 
+// popup for CV
+function showPopupCV() {
+  const popup = document.getElementById('cv');
+  popup.style.display = 'block';
+}
+
+function hidePopupCV() {
+  const popup = document.getElementById('cv');
+  if (!isMouseOverPopup) {
+    popup.style.display = 'none';
+  }
+}
+
+function keepCVPopupOpen() {
+  isMouseOverPopup = true;
+}
+
+function closeCVPopup() {
+  isMouseOverPopup = false;
+  hidePopupCV();
+}
+
+// footer for cellphone
+
 function openFooterCellphone(){
     const home = document.getElementById('menu-container');
     home.style.display= 'none';

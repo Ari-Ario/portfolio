@@ -1,41 +1,48 @@
-<link rel="stylesheet" type="text/css" href="styles-cv.css">
-<link rel="stylesheet" type="text/css" href="/../styles.css">
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles-cv.css">
+    <link rel="stylesheet" type="text/css" href="/../styles.css">
+    <title>Document</title>
+</head>
+<body>
 <section id="document">
-    <?php 
-        $path = $_SERVER['DOCUMENT_ROOT'];
-        $path .= "/components/header.php";
-        include_once($path);
-    ?>
+    <?php include dirname(__DIR__) . "/components/header.php";?>
     <section id="body">
 
         <section id="cv">
+            <br>
             <section id="above"><b>Curriculum Vitae</b></section>
             <nav class="nav">
                 <ul id="ul">
-                    <li><a href="#experience">Experience</a></li>
+                    <li><a id="exp" href="#experience">Experience</a></li>
                     <li><a href="#studies">Studies</a></li>
                     <li><a href="#languages">Lagusages</a></li>
                     <li><a href="#ict">ICT-knowledge</a></li>
-                    <li><a href="#activity">Hobbies</a></li>
+                    <li><a id="hobb" href="#activity">Hobbies</a></li>
                 </ul>
             </nav>
             <section id="content">
                 <aside id="aside" class="column">
                     <img id="img" src="/images/ari.png" style="border-radius: 50%;">
-                    <h2>Experience:</h2>
-                    <h3>2023-2024</h3>
-                    <h3>2021-2022</h3>
-                    <br>
-                    <h3>2017</h3>
-                    <h3>2016</h3>
-                    <h3>2014</h3>
-                    <h3>2013-2015</h3>
-                    <h3>2010-2012</h3>
-                    <h3>2008-2010</h3>
-                    <h3>2008</h3>
-                    <h3>2007</h3>
-                    <h3>2004-2006</h3>
+                    <section id="experience">
+                        <h2>Experience:</h2>
+                        <h3>2023-2024</h3>
+                        <h3>2021-2022</h3>
+                        <br>
+                        <h3>2017</h3>
+                        <h3>2016</h3>
+                        <h3>2014</h3>
+                        <h3>2013-2015</h3>
+                        <h3>2010-2012</h3>
+                        <h3>2008-2010</h3>
+                        <h3>2008</h3>
+                        <h3>2007</h3>
+                        <h3>2004-2006</h3>
+                    </section>
 
                     <h2 style="padding-top: 20px;">Studies:</h2>
                     <h3 class="studies">2021-2022</h3>
@@ -102,7 +109,7 @@
                         <p style="padding-top: 20px;"><strong>Computer science</strong>, UZH</p>
                         <p><strong>Film</strong>, F und F Schule für Kunst und Design, Zürich</p>
                         <p><strong>Postgraduate</strong>, ETHZ</p>
-                        <p><strong>Journalism</strong>, Independent Media Center of Kurdistan <br><i>Left beacause of seeking asylum in Europe.</i></p>
+                        <p><strong>Journalism</strong>, Independent Media Center of Kurdistan <br><i id="description">Left beacause of seeking asylum in Europe.</i></p>
                         <p><strong>Mathmatics and Computer</strong>, Universtity of Sulaimani, Iraq</p>
                         <p><strong>Media course</strong>, Sommer breaks</p>
                     </section>
@@ -132,17 +139,12 @@
             </section>    
             <footer id="footer">&copy; 2024</footer>
 
-            <!-- <section id="back-home" onclick="openHome()">
-                BACK
-            </section> -->
         </section>
 
     </section>
     <script src="../script.js"></script>
 </section>
-<?php 
-    $path = $_SERVER['DOCUMENT_ROOT'];
-    $path .= "/components/footer.php";
-    include_once($path);
-?>
+<?php include dirname(__DIR__) . "/components/footer.php";?>
 
+</body>
+</html>

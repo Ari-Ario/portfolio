@@ -1,0 +1,225 @@
+/* colors */
+
+:root {
+    /* green: */
+    --greenlight: #5aa47b63;
+    --greendark: #35503e;
+    --greendarker: #0d2e1f;
+    --greendarkest: #022619;
+    --greengrey: #6b806f;
+    /* blue: */
+    --bluelight: #0145a4;
+    --bluedark: #05152E;
+    --bluedarker: #1F2937;
+    --bluedarkest: #001E3C;
+    --bluegrey: #6B7280;
+    /* warm */
+    --yellogreen: #76c92d;
+    --greengrey: #8b907f;
+    --yellow: #e7b416;
+    --yellow-oronge: #db7b2b;
+    --yello-red: #cc7032;
+    /* mixed */
+    --blau: #100089;
+    --blaulight: #218dcb;
+    --red-yellow: #db5a2b;
+    --red: #cc3232;
+    /* speciel */
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+    --light: #eeeeee;
+}
+
+body {
+    font-family: 'Courier New', Courier, sans-serif;
+    color: var(--bluedarkest);
+    font-size: large;
+    background-color: var(--light);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#cv-container {
+    display: grid;
+    max-width: 1000px;
+    margin-top: 8vh;
+    justify-self: center;
+    align-self: center;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "img personal"
+    "experience empty"
+    "years jobs"
+    "years1 bildung"
+    "languages kenn" 
+    "kenntnisse adj"
+    "act actInfo"
+    "ref refInfo"
+    "footer footer";
+}
+#header{
+    grid-area: header;
+    background-color: var(--bluegrey);
+    text-align: center;
+    top: 6vh;
+}
+#nav {
+    grid-area: nav;
+    /* position: sticky; */
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style-type: none;
+}
+li {
+    padding-right: 30px;
+}
+a {text-decoration: none;}
+#img {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+img {
+    height: 100%;
+    max-height: 300px;
+    max-width: 200px;
+    border-radius: 40px 0 20px 30px;
+}
+.sections:nth-child(even) {
+    background-color: var(--bluegrey);
+}
+.sections:nth-child(odd) {
+    background-color: white;
+}
+
+#personal {
+    grid-area: personal;
+    padding-left: 10px;
+    padding-top: 40px;
+    padding-right: 20px;
+    max-height: 300px;
+}
+#experience {
+    grid-area: experience;
+    /* padding-left: 20px; */
+}
+#empty {grid-area: empty;}
+#years {
+    grid-area: years;
+}
+.years {
+    text-align: end;
+    padding-right: 20px;
+}
+
+#jobs {
+    grid-area: jobs;
+    padding-left: 10px;
+}
+#years1 {
+    grid-area: years1;
+}
+#bildung {
+    grid-area: bildung;
+    padding-top: 60px;
+    padding-left: 10px;
+}
+#languages {
+    grid-area: languages;
+}
+.language {
+    text-align: end;
+    padding-right: 20px;
+    padding-bottom: 0;
+    margin: 12px 0 14px 0;
+}
+#kenn {
+    grid-area: kenn;
+    padding-top: 60px;
+    padding-left: 10px;
+}
+#kenntnisse {
+    grid-area: kenntnisse;
+}
+#adj {
+    grid-area: adj;
+    padding: 20px 0 0 10px;
+}
+#act {
+    grid-area: act;
+}
+.LesenSport {
+    text-align: right;
+    padding-right: 20px;
+}
+#actInfo {
+    grid-area: actInfo;
+    padding: 60px 0 0 10px;
+}
+#ref {
+    grid-area: ref;
+    text-align: right;
+}
+#refInfo {
+    grid-area: refInfo;
+    padding-left: 10px;
+}
+
+#footer-lebenslauf {
+    grid-area: footer;
+    text-align: center;
+    background-color: var(--bluegrey);
+}
+
+
+@media screen and (max-width: 768px)  {
+    html {
+        font-size: small;
+    }
+    li {
+        padding: 0;
+        margin: 0;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    #act-li, #exp-li {
+        display: none;
+    }
+    img {
+        height: 100%;
+        max-height: 20vh;
+        max-width: 20vw;
+    }
+
+    #cv-container{
+        width: 100vw;
+        height: auto;
+    }
+    #experience {
+        padding: 0;
+    }
+    /* #empty {
+        display: none; */
+    }
+    .sections:nth-child(even) {
+        width: 30vw;
+        margin: 0;
+        padding: 0;
+    }
+    .sections:nth-child(odd) {
+        width: 70vw;
+        margin: 0;
+        padding: 0;
+    }
+ }

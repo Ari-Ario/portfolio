@@ -1,0 +1,151 @@
+/* colors */
+
+:root {
+    /* green: */
+    --greenlight: #5aa47b63;
+    --greendark: #35503e;
+    --greendarker: #0d2e1f;
+    --greendarkest: #022619;
+    --greengrey: #6b806f;
+    /* blue: */
+    --bluelight: #0145a4;
+    --bluedark: #05152E;
+    --bluedarker: #1F2937;
+    --bluedarkest: #001E3C;
+    --bluegrey: #6B7280;
+    /* warm */
+    --yellogreen: #76c92d;
+    --greengrey: #8b907f;
+    --yellow: #e7b416;
+    --yellow-oronge: #db7b2b;
+    --yello-red: #cc7032;
+    /* mixed */
+    --blau: #100089;
+    --blaulight: #218dcb;
+    --red-yellow: #db5a2b;
+    --red: #cc3232;
+    /* speciel */
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+    --light: #eeeeee;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--light);
+    color: var(--bluedarkest);
+    font-size: large;
+}
+#main-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    min-height: 100vh;
+    /* margin-top: 6vh; */
+}
+#contact-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10vh;
+}
+
+#contact-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#form-done, #form-fail {
+    display: none;
+}
+form {
+    margin: 0;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    margin-bottom: 20px;
+}
+
+fieldset{
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+input:hover {
+    background-color: var(--bluegrey);
+    opacity: .7;
+    color: white;
+    cursor: pointer;
+}
+
+fieldset:hover{
+    background-color:var(--darklight);
+}
+
+.text-center {
+    text-align: center;
+}
+
+#message {
+    width: 100%;
+}
+
+#btn {
+    border-radius: 5px;
+    margin-top: 1vh;
+    font-size: large;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px)  {
+    html {
+        font-size: larger;
+        font-weight: bold;
+    }
+    legend{
+        font-size: 13px;
+      }
+    body{
+        margin: 0;
+        padding: 0;
+        bottom: 0;
+    }
+    #main-contact{
+        display: block;
+        text-align: center;
+        width: 100vw;
+        padding-top: 8vh;
+    }
+    #contact-icons #contact-mail {
+        width: 90vw;
+        text-align: center;
+    }
+    #contact-mail {
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+
+    }
+
+    .fieldset {
+        margin: 0;
+        padding: 0;
+    }
+}
