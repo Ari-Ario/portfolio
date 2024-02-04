@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles-about.css">
     <title>About</title>
 </head>
 <body>
@@ -43,7 +44,7 @@
 
             <section class="bar grid-bar">
             <section class="bar-fill" style="width:90%">
-                <section class="tag bold grid-bar">PHP</section>
+                <section class="tag bold grid-bar">SQL</section>
             </section>
             </section>
 
@@ -61,7 +62,7 @@
 
             <section class="bar grid-bar">
             <section class="bar-fill" style="width:65%">
-                <section class="tag bold grid-bar">Node.js</section>
+                <section class="tag bold grid-bar">PHP</section>
             </section>
             </section>
 

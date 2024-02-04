@@ -30,11 +30,10 @@
     --light: #eeeeee;
 }
 
-html {
+body {
     font-family: 'Courier New', Courier, monospace;
     background-color: var(--light);
     color: var(--bluedarkest);
-    font-size: large;
 }
 #main-contact{
     display: flex;

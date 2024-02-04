@@ -29,15 +29,17 @@
   --purple: #8b5cf6;
   --light: #eeeeee;
 }
+body {
+   font-family: 'Courier New', Courier, monospace;
+   background-color: var(--light);
+   color: var(--bluedarkest);
+}
 
 #document {
     display: block;
   }
 
  #body {
-    font-family: 'Courier New', Courier, monospace;
-    background-color: var(--light);
-    color: var(--bluedarkest);
     display: flex;
     justify-content: center;
     align-items: center;

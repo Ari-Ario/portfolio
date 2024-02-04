@@ -35,16 +35,20 @@ body {
     color: var(--bluedarkest);
     font-size: large;
     background-color: var(--light);
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
 }
+#lebenslauf {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
 
 #cv-container {
     display: grid;
-    max-width: 1000px;
     margin-top: 8vh;
     justify-self: center;
     align-self: center;
@@ -110,6 +114,7 @@ img {
 #experience {
     grid-area: experience;
     /* padding-left: 20px; */
+    text-align: center;
 }
 #empty {grid-area: empty;}
 #years {
