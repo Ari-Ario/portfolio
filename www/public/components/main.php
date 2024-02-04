@@ -1,8 +1,13 @@
-<section id="main">
-    <section class="main-content">
-        <!-- <img src="/images/Iconsmind-Outline-HD-Video.512.png" alt="" id="macbook-one"> -->
+<section id="main-content">
+    <section class="main-left">
+        <div id="image-container">
+            <img src="image3.jpg" alt="Image 1" onmouseover="stopAutoChange()" onmouseout="startAutoChange()">
+        </div>
     </section>
-    <section class="main-content">
-        <img src="/images/Iconsmind-Outline-HD-Video.512.png" alt="" id="macbook-two">
+    <section class="main-right">
+        <a href="/contact/contact.php"></a>
+        <div id="image-container">
+            <img src="image1.jpg" alt="Image 1" onmouseover="stopAutoChange()" onmouseout="startAutoChange()">
+        </div>    
     </section>
 </section>

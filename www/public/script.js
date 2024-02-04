@@ -56,3 +56,38 @@ function openFooterCellphone(){
 function openHome() {
     location.href = '/public/index.php'
 }
+
+
+// cellphone photo-cover
+
+const images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
+let currentImageIndex = 0;
+let autoChangeInterval;
+
+function changeImage(index) {
+    const image = document.querySelector('#image-container img');
+    currentImageIndex = index - 1; // Subtract 1 to match array index
+    image.src = images[currentImageIndex];
+}
+
+function restoreImage() {
+    const image = document.querySelector('#image-container img');
+    // Restore to the first image when the mouse leaves
+    image.src = images[0];
+}
+
+function startAutoChange() {
+    autoChangeInterval = setInterval(() => {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        changeImage(currentImageIndex + 1); // Add 1 to match the array index
+    }, 2000); // Change image every 3000 milliseconds (3 seconds)
+}
+
+function stopAutoChange() {
+    clearInterval(autoChangeInterval);
+    restoreImage();
+}
+
+// Start auto-changing images on page load
+startAutoChange();
+
