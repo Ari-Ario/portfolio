@@ -24,7 +24,7 @@
     </secttion>
     <secttion id="contact-mail">
             <!-- <img src="https://assets-global.website-files.com/60ee32414a2efcb87f4a2940/60ee32414a2efcf8b74a295d_x.svg" loading="lazy" width="24" data-w-id="fd3f696f-c0bb-ea64-b678-f9061cbfb877" alt="" class="contact-exit" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"> -->
-                <form id="email-form" name="email-form" data-name="Email Form" method="POST" class="contact-form" data-wf-page-id="60ee32414a2efc10344a2943" data-wf-element-id="fd3f696f-c0bb-ea64-b678-f9061cbfb87b" aria-label="Email Form">
+                <form action="email-validation.php" id="email-form" name="email-form" data-name="Email Form" method="POST" class="contact-form" data-wf-page-id="60ee32414a2efc10344a2943" data-wf-element-id="fd3f696f-c0bb-ea64-b678-f9061cbfb87b" aria-label="Email Form">
                 <fieldset class="fieldset">
                     <legend>Name:</legend>
                     <section class="field">
