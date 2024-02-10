@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,8 @@
     <link rel="stylesheet" href="styles-contact.css">
     <link rel="stylesheet" href="../styles.css">
     <title>Contact</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
 <?php include dirname(__DIR__) . "/components/header.php"; ?>
@@ -24,7 +27,7 @@
     </secttion>
     <secttion id="contact-mail">
             <!-- <img src="https://assets-global.website-files.com/60ee32414a2efcb87f4a2940/60ee32414a2efcf8b74a295d_x.svg" loading="lazy" width="24" data-w-id="fd3f696f-c0bb-ea64-b678-f9061cbfb877" alt="" class="contact-exit" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"> -->
-                <form action="email-validation.php" id="email-form" name="email-form" data-name="Email Form" method="POST" class="contact-form" data-wf-page-id="60ee32414a2efc10344a2943" data-wf-element-id="fd3f696f-c0bb-ea64-b678-f9061cbfb87b" aria-label="Email Form">
+                <form method="POST" id="email-form" name="email-form" data-name="Email Form" method="POST" class="contact-form" data-wf-page-id="60ee32414a2efc10344a2943" data-wf-element-id="fd3f696f-c0bb-ea64-b678-f9061cbfb87b" aria-label="Email Form">
                 <fieldset class="fieldset">
                     <legend>Name:</legend>
                     <section class="field">
@@ -51,22 +54,44 @@
                         <textarea name="message" id="message" rows="5" placeholder='Enter comment...' maxlength='1000' minlength='100'></textarea>
                     </section>
                 </fieldset>
+                <p id="form-done-fail" tabindex="" role="region" aria-label="Email Form success"></p>
+
 
                     <section class="field">
                         <input id="btn" type="submit" value="Submit"><img src="https://assets-global.website-files.com/60ee32414a2efcb87f4a2940/60ee32414a2efc2c6b4a2973_link-arrow.svg" loading="lazy" alt="Back arrow" class="mobile-contact-arrow">
                     </section>
                 </form>
 
-                <section id="form-done" tabindex="-1" role="region" aria-label="Email Form success">
-                    <section>Thank you! I will be in contact with you shortly.</section>
-                </section>
-                <section id="form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
+                <!-- <section id="form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
                     <section>Oops! Something went wrong while sending email.</section>
-                </section>
+                </section> -->
     </secttion>
+
 </section>
 <script src="../script.js"></script>
 <?php include dirname(__DIR__) . "/components/footer.php"; ?>
+<script>
+$(document).ready(function() {
+    // Submit the form using AJAX when it's submitted
+    $('#email-form').submit(function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get form data
+        var formData = $(this).serialize();
+
+        // Send form data to the PHP script using AJAX
+        $.ajax({
+            type: 'POST',
+            url: 'email-validation.php', // Change this to your PHP script file
+            data: formData,
+            success: function(response) {
+                $('#form-done-fail').html(response); // Display response message
+                $('#email-form')[0].reset(); // Reset the form
+            }
+        });
+    });
+});
+</script>
 </body>
 </html>
 
