@@ -23,7 +23,7 @@
                 </ul>
             </nav>
             <hr>
-            <section id="img" class="sections img"><img src="../images/ari.png" alt="ari"></section>
+            <section id="img" class="sections img"><img src="../images/ari-l.png" alt="ari"></section>
             <section id="personal" class="sections">
                 <p>Mostafanejad Ismail
                     <br>Buchzelgweg 4, 8053 Zürich
@@ -107,11 +107,67 @@
                 <h3 style="padding-left: 20px; text-align: center;">ICT Kenntnisse</h3>
             </section>
             <section id="adj" class="sections">
-                <p><strong>Hard-, Softwaresupport, 1st und 2nd-Level
-                    <br>Überwachung/Bearbeitung der Incidents
-                    <br>Applikation-Support, Reparaturen etc.
-                    <br>Applikationsentwicklung mit Python und C
-                <br>Webentwicklung (Fullstack)</strong></p>
+            <div id="bars" data-animation="slide-in-right">
+                        <div class="bar grid-bar">
+                            <div class="bar-fill" style="width:100%">
+                                <div class="tag bold grid-bar">CSS</div>
+                            </div>
+                            </div>
+
+                            <div class="bar grid-bar">
+                            <div class="bar-fill" style="width:100%">
+                                <div class="tag bold grid-bar">HTML</div>
+                            </div>
+                            </div>
+
+                            <div class="bar grid-bar">
+                            <div class="bar-fill" style="width:90%">
+                                <div class="tag bold grid-bar">SQL</div>
+                            </div>
+                            </div>
+
+                            <div class="bar grid-bar">
+                            <div class="bar-fill" style="width:90%">
+                                <div class="tag bold grid-bar">JavaScript</div>
+                            </div>
+                            </div>
+
+                            <div class="bar grid-bar">
+                            <div class="bar-fill" style="width:90%">
+                                <div class="tag bold grid-bar">Python</div>
+                            </div>
+                            </div>
+
+                            <div class="bar grid-bar">
+                            <div class="bar-fill" style="width:65%">
+                                <div class="tag bold grid-bar">PHP</div>
+                            </div>
+                            </div>
+
+                            <div class="bar grid-bar">
+                            <div class="bar-fill" style="width:65%">
+                                <div class="tag bold grid-bar">Kivy</div>
+                            </div>
+                            </div>
+
+                            <div class="bar grid-bar">
+                            <div class="bar-fill" style="width:50%">
+                                <div class="tag bold grid-bar">C</div>
+                            </div>
+                            </div>
+
+                            <div class="bar grid-bar">
+                            <div class="bar-fill" style="width:50%">
+                                <div class="tag bold grid-bar">Figma</div>
+                            </div>
+                            </div>
+
+                            <div class="bar grid-bar">
+                            <div class="bar-fill" style="width:70%">
+                                <div class="tag bold grid-bar">design</div>
+                            </div>
+                            </div>
+                        </div>
             </section>
             <section id="act" class="sections">
                 <h3 style="padding-left: 20px; text-align: center;">Aktivität/Interessen</h3>

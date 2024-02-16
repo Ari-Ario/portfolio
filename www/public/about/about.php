@@ -15,100 +15,101 @@
 
 <section id="about-container">
 
-    <section id="img-info">
-        <section id="img-sea">
+    <div id="img-info">
+        <div id="img-sea">
             <img id="sea" src="../images/ari-sea.JPG" alt="sea">
-        </section>
-        <section>
+        </div>
+        <div id="img-desc">
             <h3>profetional</h3>
             <h3>Analysing</h3>
 
-        </section>
-    </section>
+        </div>
+    </div>
 
     <section id="bar-table">
-        <section id="computer-content">
+        <div id="computer-content">
             <h3>Application-,Web Development</h3>
-        <section id="bars" data-animation="slide-in-right">
-            <section class="bar grid-bar">
-            <section class="bar-fill" style="width:100%">
-                <section class="tag bold grid-bar">CSS</section>
-            </section>
-            </section>
+            <div id="bars" data-animation="slide-in-right">
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:100%">
+                    <div class="tag bold grid-bar">CSS</div>
+                </div>
+                </div>
 
-            <section class="bar grid-bar">
-            <section class="bar-fill" style="width:100%">
-                <section class="tag bold grid-bar">HTML</section>
-            </section>
-            </section>
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:100%">
+                    <div class="tag bold grid-bar">HTML</div>
+                </div>
+                </div>
 
-            <section class="bar grid-bar">
-            <section class="bar-fill" style="width:90%">
-                <section class="tag bold grid-bar">SQL</section>
-            </section>
-            </section>
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:90%">
+                    <div class="tag bold grid-bar">SQL</div>
+                </div>
+                </div>
 
-            <section class="bar grid-bar">
-            <section class="bar-fill" style="width:90%">
-                <section class="tag bold grid-bar">JavaScript</section>
-            </section>
-            </section>
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:90%">
+                    <div class="tag bold grid-bar">JavaScript</div>
+                </div>
+                </div>
 
-            <section class="bar grid-bar">
-            <section class="bar-fill" style="width:90%">
-                <section class="tag bold grid-bar">Python</section>
-            </section>
-            </section>
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:90%">
+                    <div class="tag bold grid-bar">Python</div>
+                </div>
+                </div>
 
-            <section class="bar grid-bar">
-            <section class="bar-fill" style="width:65%">
-                <section class="tag bold grid-bar">PHP</section>
-            </section>
-            </section>
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:65%">
+                    <div class="tag bold grid-bar">PHP</div>
+                </div>
+                </div>
 
-            <section class="bar grid-bar">
-            <section class="bar-fill" style="width:65%">
-                <section class="tag bold grid-bar">Kivy</section>
-            </section>
-            </section>
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:65%">
+                    <div class="tag bold grid-bar">Kivy</div>
+                </div>
+                </div>
 
-            <section class="bar grid-bar">
-            <section class="bar-fill" style="width:50%">
-                <section class="tag bold grid-bar">C</section>
-            </section>
-            </section>
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:50%">
+                    <div class="tag bold grid-bar">C</div>
+                </div>
+                </div>
 
-            <section class="bar grid-bar">
-            <section class="bar-fill" style="width:50%">
-                <section class="tag bold grid-bar">Figma</section>
-            </section>
-            </section>
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:50%">
+                    <div class="tag bold grid-bar">Figma</div>
+                </div>
+                </div>
 
-            <section class="bar grid-bar">
-            <section class="bar-fill" style="width:50%">
-                <section class="tag bold grid-bar">Illustrator</section>
-            </section>
-            </section>
-        </section>
-        </section>
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:50%">
+                    <div class="tag bold grid-bar">Illustrator</div>
+                </div>
+                </div>
+            </div>
+        </div>
 
-        <section id="arts-content">
+        <div id="arts-content">
             <h3>Arts</h3>
-        <section id="bars" data-animation="slide-in-right">
-            <section class="bar grid-bar">
-            <section class="bar-fill" style="width:90%">
-                <section class="tag bold grid-bar">Film</section>
-            </section>
-            </section>
+            <div id="bars" data-animation="slide-in-right">
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:90%">
+                    <div class="tag bold grid-bar">Film</div>
+                </div>
+                </div>
 
-            <section class="bar grid-bar">
-            <section class="bar-fill" style="width:70%">
-                <section class="tag bold grid-bar">Theater</section>
-            </section>
-            </section>
-        </section>
-        </section>
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:70%">
+                    <div class="tag bold grid-bar">Theater</div>
+                </div>
+                </div>
+            </div>
+        </div>
     </section>
+
 </section>
 <script src="../script.js"></script>
 <section>

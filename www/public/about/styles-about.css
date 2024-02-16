@@ -42,7 +42,7 @@ body {
     min-width: 60vw;
     height: fit-content;
     padding: 1vh;
-    background-color: var(--greengrey);
+    /* background-color: var(--greengrey); */
     border-radius: 10px;
   }
   
@@ -89,6 +89,9 @@ body {
       height: 40vh;
       left: 0;
       border-radius: 10px 10px;
+    }
+    #img-desc {
+      display: none;
     }
 
     #bars {

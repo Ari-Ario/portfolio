@@ -63,7 +63,7 @@
                     <br>
                     <br>
                     <br>
-                    <h2>Hobbies:</h2>
+                    <h2 id="hobby">Hobbies:</h2>
                     <h3 class="active">Reading:</h3>
                     <h3 class="active">Sport:</h3>
 
@@ -80,7 +80,7 @@
                         <br>Residence permit: B
                         </p>
                     </section>
-                    <section id="experience">
+                    <section class="exp">
                         <p><strong>Web Development</strong></p>
                         <p><strong>1st and 2nd Level ICT Support</strong></p>
                         <p>Incidents, Instalations, Workplaces, Reparations</p>
@@ -121,11 +121,70 @@
                         <p>Good</p>
                     </section>
                     <section id="ict">
-                        <p><strong>Hard-, Softwaresupport, 1st und 2nd-Level
-                            <br>Programming: Python, C, PHP, JS etc.
-                            <br>Application-, Web-Development
-                            <br>Application-Support
-                            <br>Incident-managment</strong></p>
+                    <div id="computer-content">
+                        <h3>Application-,Web Development</h3>
+                            <div id="bars" data-animation="slide-in-right">
+                                <div class="bar grid-bar">
+                                <div class="bar-fill" style="width:100%">
+                                    <div class="tag bold grid-bar">CSS</div>
+                                </div>
+                                </div>
+
+                                <div class="bar grid-bar">
+                                <div class="bar-fill" style="width:100%">
+                                    <div class="tag bold grid-bar">HTML</div>
+                                </div>
+                                </div>
+
+                                <div class="bar grid-bar">
+                                <div class="bar-fill" style="width:90%">
+                                    <div class="tag bold grid-bar">SQL</div>
+                                </div>
+                                </div>
+
+                                <div class="bar grid-bar">
+                                <div class="bar-fill" style="width:90%">
+                                    <div class="tag bold grid-bar">JavaScript</div>
+                                </div>
+                                </div>
+
+                                <div class="bar grid-bar">
+                                <div class="bar-fill" style="width:90%">
+                                    <div class="tag bold grid-bar">Python</div>
+                                </div>
+                                </div>
+
+                                <div class="bar grid-bar">
+                                <div class="bar-fill" style="width:65%">
+                                    <div class="tag bold grid-bar">PHP</div>
+                                </div>
+                                </div>
+
+                                <div class="bar grid-bar">
+                                <div class="bar-fill" style="width:65%">
+                                    <div class="tag bold grid-bar">Kivy</div>
+                                </div>
+                                </div>
+
+                                <div class="bar grid-bar">
+                                <div class="bar-fill" style="width:50%">
+                                    <div class="tag bold grid-bar">C</div>
+                                </div>
+                                </div>
+
+                                <div class="bar grid-bar">
+                                <div class="bar-fill" style="width:50%">
+                                    <div class="tag bold grid-bar">Figma</div>
+                                </div>
+                                </div>
+
+                                <div class="bar grid-bar">
+                                <div class="bar-fill" style="width:70%">
+                                    <div class="tag bold grid-bar">design</div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
                     </section>
                     <section id="activity">
                         <p>Sicence, programming, economics</p>

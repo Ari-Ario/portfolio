@@ -94,7 +94,7 @@ body {
    padding: 0;
  }
  .column {
-   height: 2200px;
+   height: auto;
  }
 
 #aside {
@@ -103,14 +103,15 @@ body {
    padding-right: 20px;
    margin: 0;
    width: 300px;
+   min-height: 100%;
    font-size: 18px;
    background-color: var(--bluegrey);
    border: 1px solid var(--bluedarkest);
 }
 
 #img {
-   height: 300px;
-   padding: 40px 30px 38px 40px;
+   height: 30vh;
+   padding: 40px 30px 0 40px;
 }
 
 #main-cont {
@@ -152,11 +153,18 @@ body {
    padding-top: 50px;
 }
 #ict {
-   padding-top: 35px;
-}                 
+   padding-top: 4vh;
+}
+              
+#hobby {
+   margin-top: 40vh;
+}
+.exp {
+   margin-top: 22vh;
+}
 #activity {
-   padding-top: 30px;
-   padding-bottom: 5px;
+   margin-top: 16vh;
+   margin-bottom: 5px;
 }
 
 #footer {
@@ -167,7 +175,45 @@ body {
    opacity: .7;
 }
 
-
+/* styling of bars */
+#bar-table {
+   padding: 0 2vw 0 2vw;
+ }
+ 
+ #bars {
+   display: grid;
+   justify-content: left;
+   align-items: center;
+   grid-template-rows: 10(1fr);
+   gap: 1vh;
+   min-width: 60vw;
+   height: fit-content;
+   padding: 1vh;
+   /* background-color: var(--greengrey); */
+   border-radius: 10px;
+ }
+ 
+ .bar {
+   display: block;
+   text-align: left;
+   width: 46vw;
+   
+   min-width: 30vw;
+   background-color: var(--bluegrey);
+ }
+ 
+ .bar-fill {
+   background-color: var(--blau);
+ }
+ 
+ .tag {
+   display: inline-block;
+   text-align: left;
+   width: 100px;
+   background-color: var(--bluedarkest);
+   color: var(--light);
+ }
+ 
 
 @media screen and (max-width: 768px)  {
    html {
@@ -213,9 +259,12 @@ body {
       padding: 0;
       margin-bottom: 0 ;
    }
-   /* #experience {
-      padding-top: 40vh;
-   } */
+   #experience {
+      margin-top: 0;
+   }
+   .exp {
+      margin-top: 26vh;
+   }
    
    #main-cont {
       width: 70vw;
@@ -243,5 +292,15 @@ body {
    #ict-exp-mob {
       display: block;
    }
+   #bars {
+      min-width: 64vw;
+    }
+
+    .bar {
+      width: 64vw;
+    }
+    #activity {
+      margin-top: 20vh;
+    }
 
 }

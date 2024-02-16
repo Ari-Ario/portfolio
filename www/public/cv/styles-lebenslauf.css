@@ -185,6 +185,46 @@ img {
 }
 
 
+/* styling of bars */
+#bar-table {
+    padding: 0 2vw 0 2vw;
+  }
+  
+  #bars {
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    grid-template-rows: 10(1fr);
+    gap: 1vh;
+    min-width: 70vw;
+    height: fit-content;
+    padding: 1vh;
+    /* background-color: var(--greengrey); */
+    border-radius: 10px;
+  }
+  
+  .bar {
+    display: block;
+    text-align: left;
+    width: 60vw;
+    
+    min-width: 30vw;
+    background-color: var(--bluegrey);
+  }
+  
+  .bar-fill {
+    background-color: var(--blau);
+  }
+  
+  .tag {
+    display: inline-block;
+    text-align: left;
+    width: 100px;
+    background-color: var(--bluedarkest);
+    color: var(--light);
+  }
+
+
 @media screen and (max-width: 768px)  {
     html {
         font-size: small;
@@ -216,7 +256,7 @@ img {
     }
     /* #empty {
         display: none; */
-    }
+
     .sections:nth-child(even) {
         width: 30vw;
         margin: 0;
@@ -227,3 +267,11 @@ img {
         margin: 0;
         padding: 0;
     }
+    #bars {
+        min-width: 60vw;
+      }
+
+      .bar {
+        width: 60vw;
+      }
+}
