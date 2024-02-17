@@ -262,6 +262,7 @@ a {
   background-image: url(/images-main/iphone-14-pro.png);
   background-size: cover;
    background-position: center center;
+   animation: swing 5s infinite;
 }
 .device2 {
   position: absolute;
@@ -278,16 +279,33 @@ a {
     background-position: center center;
  }
 
-.container {
+#image-container-iphone {
   overflow: hidden;
-  width: 100%;
+  width: auto;
   height: 100%;
    position: absolute;
    top: 1.8%;
    bottom: 1.6%;
    left: 5%;
    right: 4.5%;
+   border-radius: 2vw;
    z-index: -2;
+}
+#image-container-macbook {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+   position: absolute;
+   top: 3.2%;
+   bottom: 9.6%;
+   left: 8%;
+   right: 10%;
+   border-radius: 2vw;
+   z-index: -2;
+
+}
+#macbook-images {
+  width: 100%;
 }
 
 .animated {
@@ -296,21 +314,58 @@ a {
   left: 0;
   width: 100%; /* Set the width of the images to 100% of their container */
   height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
-  animation: slide 5s infinite; /* Define the animation */
-  border-radius: 10px;
+}
+.animated:nth-child(1) {
+  animation: slide1 5s infinite; /* Apply animation to first image */
 }
 
-@keyframes slide {
+.animated:nth-child(2) {
+  animation: slide2 5s infinite; /* Apply animation to second image */
+}
+
+@keyframes slide1 {
   0% {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-100%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-200%);
+    transform: translateX(-100%); /* Slide first image */
   }
 }
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-200%); /* Slide second image */
+  }
+}
+
+/* @keyframes swing {
+  0% {
+    transform: rotate3d(0, 1, 0, -10deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 20deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, -10deg);
+  }
+
+  0% {
+    transform: rotate3d(0, 0, 1, -3deg);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 6deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, -3deg);
+  }
+} */
 
 .container:hover .animated {
   animation-play-state: paused; /* Pause the animation on hover */

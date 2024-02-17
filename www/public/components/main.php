@@ -11,11 +11,10 @@
             </div>
         </div>
 
-
         <div class="dm-width2">
             <div class="dm-device2">
                 <div class="device2">
-                <div id="image-container">
+                <div id="image-container-macbook" class="container">
                     <img id="macbook-images" src="screenshot1.png" alt="Image 1" onmouseover="stopAutoChange()" onmouseout="startAutoChange()">
 
                 </div>

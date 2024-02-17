@@ -60,18 +60,18 @@ function openHome() {
 
 // cellphone photo-cover
 
-const images = ['image1.png', 'image2.png'];
+const images = ['screenshot1.png', 'screenshot2.png'];
 let currentImageIndex = 0;
 let autoChangeInterval;
 
 function changeImage(index) {
-    const image = document.querySelector('#image-container img');
+    const image = document.querySelector('#image-container-macbook img');
     currentImageIndex = index - 1; // Subtract 1 to match array index
     image.src = images[currentImageIndex];
 }
 
 function restoreImage() {
-    const image = document.querySelector('#image-container img');
+    const image = document.querySelector('#image-container-macbook img');
     // Restore to the first image when the mouse leaves
     image.src = images[0];
 }
@@ -89,5 +89,5 @@ function stopAutoChange() {
 }
 
 // Start auto-changing images on page load
-// startAutoChange();
+startAutoChange();
 
