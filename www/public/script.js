@@ -57,6 +57,15 @@ function openHome() {
     location.href = '/public/index.php'
 }
 
+// phone plus slide images
+$('.slider').owlCarousel({
+  items: 1,
+  singleItem:true,
+  nav: true,
+  dots: false,
+  loop: true,
+  autoPlay: 3000
+}); 
 
 // cellphone photo-cover
 
