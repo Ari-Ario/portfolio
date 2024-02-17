@@ -57,19 +57,10 @@ function openHome() {
     location.href = '/public/index.php'
 }
 
-// phone plus slide images
-$('.slider').owlCarousel({
-  items: 1,
-  singleItem:true,
-  nav: true,
-  dots: false,
-  loop: true,
-  autoPlay: 3000
-}); 
 
 // cellphone photo-cover
 
-const images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
+const images = ['image1.png', 'image2.png'];
 let currentImageIndex = 0;
 let autoChangeInterval;
 
@@ -98,5 +89,5 @@ function stopAutoChange() {
 }
 
 // Start auto-changing images on page load
-startAutoChange();
+// startAutoChange();
 
