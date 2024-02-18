@@ -18,9 +18,32 @@ if (session_status() === PHP_SESSION_NONE){
         <?php include_once "./components/header.php" ?>
 </header>
 
-    <main>
-        <?php include_once "./components/main.php" ?>
-</main>
+    <main id="main">
+        <section id="main-content">
+            <div class="dm-width">
+                <div class="dm-device1">
+                    <div class="device1">
+                    <div id="image-container-iphone" class="container">
+                        <img class="animated" src="image1.png" alt="Image 1">
+                        <img class="animated" src="image2.png" alt="Image 2">
+                        <img id="last-img" class="animated" src="image3.png" alt="Image 2">
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dm-width2">
+                <div class="dm-device2">
+                    <div class="device2">
+                    <div id="image-container-macbook" class="container">
+                        <img id="macbook-images" src="screenshot1.png" alt="Image 1" onmouseover="stopAutoChange()" onmouseout="startAutoChange()">
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <?php include_once "./components/footer.php" ?>

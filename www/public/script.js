@@ -60,7 +60,7 @@ function openHome() {
 
 // cellphone photo-cover
 
-const images = ['screenshot1.png', 'screenshot2.png'];
+const images = ['screenshot1.png', 'screenshot2.png', 'screenshot3.png'];
 let currentImageIndex = 0;
 let autoChangeInterval;
 
@@ -80,7 +80,7 @@ function startAutoChange() {
     autoChangeInterval = setInterval(() => {
         currentImageIndex = (currentImageIndex + 1) % images.length;
         changeImage(currentImageIndex + 1); // Add 1 to match the array index
-    }, 2000); // Change image every 3000 milliseconds (3 seconds)
+    }, 3000); // Change image every 3000 milliseconds (3 seconds)
 }
 
 function stopAutoChange() {

@@ -136,7 +136,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
 }
 
 .search-container:hover .popup {
@@ -289,23 +289,23 @@ a {
    left: 5%;
    right: 4.5%;
    border-radius: 2vw;
-   z-index: -2;
+   /* z-index: -2; */
 }
 #image-container-macbook {
   overflow: hidden;
-  width: 100%;
+  width: 81.34%;
+  height: 100%;
   height: auto;
    position: absolute;
    top: 3.2%;
-   bottom: 9.6%;
-   left: 8%;
+   bottom: 9%;
+   left: 9.349%;
    right: 10%;
-   border-radius: 2vw;
-   z-index: -2;
-
+   /* z-index: -2; */
 }
 #macbook-images {
   width: 100%;
+  z-index: -2;
 }
 
 .animated {
@@ -314,13 +314,17 @@ a {
   left: 0;
   width: 100%; /* Set the width of the images to 100% of their container */
   height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
+  z-index: -2;
 }
 .animated:nth-child(1) {
-  animation: slide1 5s infinite; /* Apply animation to first image */
+  animation: slide1 5s infinite; /* Apply animation to other images */
 }
 
 .animated:nth-child(2) {
-  animation: slide2 5s infinite; /* Apply animation to second image */
+  animation: slide2 5s infinite; 
+}
+#last-img {
+  z-index: -3;
 }
 
 @keyframes slide1 {
@@ -345,7 +349,17 @@ a {
   }
 }
 
-/* @keyframes swing {
+#image-container-iphone:hover .animated {
+  animation-play-state: paused; /* Pause the animation on hover */
+}
+.dm-width:hover {
+  animation: swingright 5s infinite;
+}
+.dm-width2:hover {
+  animation: swingleft 5s infinite;
+}
+
+@keyframes swingright {
   0% {
     transform: rotate3d(0, 1, 0, -10deg);
   }
@@ -355,32 +369,19 @@ a {
   100% {
     transform: rotate3d(0, 1, 0, -10deg);
   }
-
-  0% {
-    transform: rotate3d(0, 0, 1, -3deg);
-  }
-  50% {
-    transform: rotate3d(0, 0, 1, 6deg);
-  }
-  100% {
-    transform: rotate3d(0, 0, 1, -3deg);
-  }
-} */
-
-.container:hover .animated {
-  animation-play-state: paused; /* Pause the animation on hover */
 }
 
-
-
-/* #iphone-images {
-  max-width: 246px;
-  height: 100%;
-  height: 100%;
-  border-radius: 40px;
-} */
-
-
+@keyframes swingleft {
+  0% {
+    transform: rotate3d(0, 1, 0, 10deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, -20deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 10deg);
+  }
+}
 
 
 /* footer-------------------------- */
@@ -481,9 +482,11 @@ a {
     }
 
     /* main ------------------- */
+    #main {
+      bottom: 8vh;
+    }
     #main-content {
       display: block;
-      top: 8vh;
     }
 
     .dm-width2 {
