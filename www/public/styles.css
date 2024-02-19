@@ -201,12 +201,14 @@ a {
 
 
 /* main body------------------------- */
+#main {
+  margin-top: 10vh;
+}
 #main-content {
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  top: 10vh;
   padding: 0 1vw 0 1vw;
 }
 
