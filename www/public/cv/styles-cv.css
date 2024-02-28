@@ -94,7 +94,7 @@ body {
    padding: 0;
  }
  .column {
-   height: auto;
+   height: 2400px;
  }
 
 #aside {
@@ -186,7 +186,7 @@ body {
    align-items: center;
    grid-template-rows: 10(1fr);
    gap: 1vh;
-   min-width: 60vw;
+   min-width: fit-content;
    height: fit-content;
    padding: 1vh;
    /* background-color: var(--greengrey); */
@@ -196,8 +196,7 @@ body {
  .bar {
    display: block;
    text-align: left;
-   width: 46vw;
-   
+   width: 40vw;
    min-width: 30vw;
    background-color: var(--bluegrey);
  }
@@ -238,7 +237,7 @@ body {
       display: none;
     }
     .column {
-      height: auto;
+      height: 100%;
     }
    #content {
       max-width: auto;
