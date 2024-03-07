@@ -485,7 +485,7 @@ a {
 
     /* main ------------------- */
     #main {
-      bottom: 8vh;
+      bottom: 10%;
     }
     #main-content {
       display: block;

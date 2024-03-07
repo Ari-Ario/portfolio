@@ -24,9 +24,11 @@ if (session_status() === PHP_SESSION_NONE){
                 <div class="dm-device1">
                     <div class="device1">
                     <div id="image-container-iphone" class="container">
-                        <img class="animated" src="image1.png" alt="Image 1">
+<!--                         <img class="animated" src="image4.png" alt="Image 4">
+                        <img class="animated" src="image3.png" alt="Image 3"> -->
                         <img class="animated" src="image2.png" alt="Image 2">
-                        <img id="last-img" class="animated" src="image3.png" alt="Image 2">
+                        <img class="animated" src="image1.png" alt="Image 1">
+                        <img id="last-img" class="animated" src="image5.png" alt="Image 5">
                     </div>
                     </div>
                 </div>
