@@ -3,3 +3,5 @@ node_modules/
 
 # Untrack compiled css files
 www/public/build/
+
+.DS_Store

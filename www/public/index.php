@@ -28,7 +28,8 @@ if (session_status() === PHP_SESSION_NONE){
                         <img class="animated" src="image3.png" alt="Image 3"> -->
                         <img class="animated" src="image2.png" alt="Image 2">
                         <img class="animated" src="image1.png" alt="Image 1">
-                        <img id="last-img" class="animated" src="image5.png" alt="Image 5">
+                        <img id="last-img" class="animated" src="image3.png" alt="Image 3">
+                        <button class="popup-button-phone" onclick="redirectToForm()">Form demo</button>
                     </div>
                     </div>
                 </div>
@@ -39,7 +40,7 @@ if (session_status() === PHP_SESSION_NONE){
                     <div class="device2">
                     <div id="image-container-macbook" class="container">
                         <img id="macbook-images" src="screenshot1.png" alt="Image 1" onmouseover="stopAutoChange()" onmouseout="startAutoChange()">
-
+                        <button class="popup-button-laptop" onclick="redirectToForm()">Quiz demo</button>
                     </div>
                     </div>
                 </div>

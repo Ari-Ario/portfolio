@@ -202,7 +202,7 @@ a {
 
 /* main body------------------------- */
 #main {
-  margin-top: 10vh;
+  margin-top: 10%;
 }
 #main-content {
   position: relative;
@@ -290,7 +290,7 @@ a {
    bottom: 1.6%;
    left: 5%;
    right: 4.5%;
-   border-radius: 2vw;
+   border-radius: 3vw;
    /* z-index: -2; */
 }
 #image-container-macbook {
@@ -309,6 +309,28 @@ a {
   width: 100%;
   z-index: -2;
 }
+/* popup for button on the laptop-screen----------------- */
+.popup-button-laptop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: transparent; /* Set background color to transparent */
+  border: 2px solid var(--red); /* Set border to make button visible */
+  border-radius: 2vw;
+  color: var(--red); /* Text color of the button */
+  font-weight: bolder;
+  opacity: 0; /* Initially hide the button */
+  transition: opacity 0.3s ease; /* Add transition effect for smooth opacity change */
+}
+
+.container:hover .popup-button-laptop {
+  opacity: 0.8; /* Show the button on hover */
+  background-color: var(--light);
+}
+
+/* --------------------------------------------------- */
 
 .animated {
   position: absolute; /* Position the images absolutely within the container */
@@ -354,6 +376,31 @@ a {
 #image-container-iphone:hover .animated {
   animation-play-state: paused; /* Pause the animation on hover */
 }
+
+
+/* popup for button on the phone-screen----------------- */
+.popup-button-phone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: transparent; /* Set background color to transparent */
+  border-radius: 2vw;
+  border: 2px solid var(--red); /* Set border to make button visible */
+  color: var(--red); /* Text color of the button */
+  font-weight: bolder;
+  opacity: 0; /* Initially hide the button */
+  transition: opacity 0.3s ease; /* Add transition effect for smooth opacity change */
+}
+
+.container:hover .popup-button-phone {
+  opacity: 0.8; /* Show the button on hover */
+  background-color: var(--light);
+}
+
+/* --------------------------------------------------- */
+
 .dm-width:hover {
   animation: swingright 5s infinite;
 }

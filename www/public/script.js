@@ -91,3 +91,8 @@ function stopAutoChange() {
 // Start auto-changing images on page load
 startAutoChange();
 
+
+// redirecting from mainPage to Form 
+function redirectToForm() {
+  window.location.href = "signup-form/index-form.html";
+}
