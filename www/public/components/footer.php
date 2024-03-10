@@ -1,7 +1,7 @@
 <section id="footer-container">
     <section id="footer-navigation">
             <a class="navigation" href="/index.php">Home</a>
-            <a class="navigation" href="/">Film</a>
+            <a class="navigation" href="/film/index-film.php">Film</a>
             <a class="navigation" href="/about/about.php">about</a>
             <a class="navigation" href="/contact/contact.php">Contact</a>
     </section>

@@ -1,0 +1,93 @@
+/* colors */
+
+:root {
+    /* green: */
+    --greenlight: #5aa47b63;
+    --greendark: #35503e;
+    --greendarker: #0d2e1f;
+    --greendarkest: #022619;
+    --greengrey: #6b806f;
+    /* blue: */
+    --bluelight: #0145a4;
+    --bluedark: #05152E;
+    --bluedarker: #1F2937;
+    --bluedarkest: #001E3C;
+    --bluegrey: #6B7280;
+    /* warm */
+    --yellogreen: #76c92d;
+    --greengrey: #8b907f;
+    --yellow: #e7b416;
+    --yellow-oronge: #db7b2b;
+    --yello-red: #cc7032;
+    /* mixed */
+    --blau: #100089;
+    --blaulight: #218dcb;
+    --red-yellow: #db5a2b;
+    --red: #cc3232;
+    /* speciel */
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+    --light: #eeeeee;
+  }
+  
+  #body-film {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--light);
+    color: var(--bluedarkest);
+    font-size: large;
+    margin: 0;
+    padding: 0;
+  }
+
+#film-container {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh;
+    width: 94vw;
+    z-index: -2;
+    padding: 10px 20px;
+    background-color: transparent; 
+    border-radius: 2vw;
+    border: 2px solid var(--red); 
+    color: var(--red); 
+    font-weight: bolder;
+    transition: opacity 0.3s ease; /* Add transition effect for smooth opacity change */
+}
+
+#aside-film {
+    height: 100%;
+    width: 30%;
+    background-color: #0145a4;
+}
+
+#main-film {
+    height: 100%;
+    width: 70%;
+    background-color: red;
+}
+
+element.style {
+  width: 100%;
+}
+*{
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+.project-hero-b {
+  width: 100%;
+  background-color: var(--bluedarker);
+  border-radius: 1.17em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
