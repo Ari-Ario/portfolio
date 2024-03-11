@@ -47,6 +47,7 @@
     transform: translate(-50%, -50%);
     height: 80vh;
     width: 94vw;
+    overflow: hidden;
     z-index: -2;
     padding: 10px 20px;
     background-color: transparent; 
@@ -60,23 +61,16 @@
 #aside-film {
     height: 100%;
     width: 30%;
-    background-color: #0145a4;
+    background-color: var(--bluegrey);
 }
 
-#main-film {
-    height: 100%;
-    width: 70%;
-    background-color: red;
-}
-
-element.style {
-  width: 100%;
-}
-*{
-  grid-area: span 1 / span 1 / span 1 / span 1;
+#main-film{
+  overflow: hidden;
+  width: 70%;
+  height: auto;
 }
 .project-hero-b {
-  width: 100%;
+  overflow-y: auto; 
   background-color: var(--bluedarker);
   border-radius: 1.17em;
   flex-direction: column;
@@ -86,8 +80,24 @@ element.style {
   display: flex;
   position: relative;
   overflow: hidden;
+  z-index: -3;
 }
 
-* {
-  box-sizing: border-box;
+/* .block-project-hero {
+  border-radius: 2vw;
+  animation: moveUp 4s infinite alternate;
 }
+
+.block-project-hero:hover {
+  animation-play-state: paused;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  100% {
+    transform: translateY(-200%); /* End position */
+  }
+} */
+
