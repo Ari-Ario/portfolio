@@ -18,7 +18,7 @@
 
     <section id="film-container">
         <aside id="aside-film">
-            <div id="aside-desc"><h1>Meeting of: <br>. Visualization <br>. Storytelling <br>. Design</h1></div>
+            <div id="aside-desc"><h1>Meeting of: <br>. Visualization <br>. Storytelling <br>. Creativity <br>. Design <br>. Color</h1></div>
         </aside>
 
         <main id="main-film">

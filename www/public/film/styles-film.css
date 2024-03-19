@@ -64,6 +64,7 @@
     width: 30%;
     border-radius: 1.17em;
     text-align: center;
+    border-radius: 2vw;
     background-color: var(--bluegrey);
     /* writing-mode: tb-rl;
     transform: rotate(-180deg); */
@@ -101,12 +102,12 @@
     #ec4899 70%,
     #6B7280 90%
   );
-  padding-top: 4vh;
   border-radius: 2vw;
   animation: moveMain 4s;
 }
 
 .block-project-hero {
+  padding-top: 1vh;
   position: relative;
 }
 

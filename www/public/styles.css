@@ -285,12 +285,12 @@ a {
   overflow: hidden;
   width: auto;
   height: 100%;
-   position: absolute;
-   top: 1.8%;
-   bottom: 1.6%;
-   left: 5%;
-   right: 4.5%;
-   border-radius: 3vw;
+  position: absolute;
+  top: 1.8%;
+  bottom: 1.6%;
+  left: 5%;
+  right: 4.5%;
+  border-radius: 2vw;
    /* z-index: -2; */
 }
 #image-container-macbook {
