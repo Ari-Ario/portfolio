@@ -1,0 +1,256 @@
+
+:root {
+    /* cold: */
+    --darklight: #0145a4;
+	--dark: #05152E;
+	--darker: #1F2937;
+	--darkest: #001E3C;
+	--grey: #6B7280;
+    /* warm */
+    --green: #2dc937;
+    --lightgreen: #99c140;
+    --yellow: #e7b416;
+    --yellow-red: #db7b2b;
+    --red: #cc3232;
+    /* mixd or speciel */
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+    font-size: medium;
+}
+
+body {
+	display: grid;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: var(--light);
+    font-size: larger;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: block;
+    text-align: center; */
+    padding: 2vw;
+    margin: 0;
+    width: 40vw;
+    height: 86vh;
+    border-radius: 20px;
+    background-color: var(--dark);
+    box-shadow: 2px 4px 10px var(--darkest);
+}
+
+.signup-page {
+    /* flex: 1; */
+    display: flex;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+#form1 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#page2, #page3, #page4, #page5 {
+    display: none;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid white; */
+}
+#form1, #form2, #form3, #form4, #form5{
+    padding: 0;
+    margin: 0;
+}
+
+.form {
+    display: block;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+    float: left;
+    clear: both;
+}
+
+#form3{
+    padding: 0;
+}
+
+#language {
+    text-align: end;
+    top: 0;
+}
+#lang-selection{
+    padding: 0;
+    margin: 0;
+    background-color: var(--darker);
+    color: var(--light);
+    border-radius: 6px;
+}
+
+#logo1{
+    text-align: center;
+    margin-bottom: 6vh;
+}
+#logo2 {
+    text-align: center;
+}
+
+.pairs {
+    margin-top: 2vh;
+}
+.pallet {
+    min-height: 6vh;
+}
+
+.el {
+    margin-top: 1vw;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    border-radius: 10px;
+}
+
+#or {
+    text-align: center;
+}
+
+#sign-in {
+    background-color: var(--darklight);
+    color: white;
+}
+
+#gmail-sign-in {
+    background-color: #db4a39;
+    color: white;
+}
+
+.agb, .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: auto;
+    padding: 0;
+    margin: 0;
+    max-height: 30px;
+    /* place-self: center center;
+    justify-self: center;
+    align-self: self-start; */
+}
+
+#agb {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#gender{
+    padding: 0;
+    margin: 0;
+    background-color: var(--darker);
+    color: var(--light);
+    border-radius: 6px;
+}
+
+#info {
+    text-align: left;
+}
+#back-send {
+    position: absolute;
+    top: auto;
+    bottom: 12vh;
+    max-width: 40vw;
+}
+.last-btn {
+    width: 36vw;
+}
+
+.el:hover {
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        background-color: var(--dark);
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .signup-container {
+        border-radius: 0px;
+        width: 90vw;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .form {
+        height: 100vh;
+        width: 100vw;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid white; */
+        margin: 0 10vw;
+    }
+    #form2, #form3, #form4, #form5{
+        padding: 0 8vw;
+        margin: 0 ;
+    }
+
+    #back-send {
+        position: absolute;
+        top: auto;
+        bottom: 12vh;
+        width: 100%;
+        height: fit-content;
+    }
+    .last-btn, .back-send {
+        width: 100vw;
+    }
+    
+    .pairs {
+        margin: 1vh 0 1vh 0;
+    }
+    .el {
+        margin: 10px 0 10px 0;
+        width: 100%;
+        min-width: 300px;
+        min-height: 30px;
+    }
+    .agb, .news {
+        padding: 0;
+        margin: 0;
+        max-height: 30px;
+    }
+    #newsletter {
+        max-width: 50vw;
+    }
+    input[type="checkbox" i] {
+        display: grid;
+        align-self: flex-start;
+        background-color: initial;
+        cursor: default;
+        appearance: auto;
+        box-sizing: 50%;
+        margin: 0;
+        border: initial;
+    } 
+}
