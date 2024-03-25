@@ -13,8 +13,9 @@
 <header >
         <?php include_once "../components/header.php" ?>
 </header>
-    <main class="signup-container" id="main-page">
-        <section class="signup-page" id="page1">
+<div id="main-page">
+    <main class="signup-container" >
+        <div class="signup-page" id="page1">
             <!-- Page 1 content -->
             <!-- form fields for step 1 -->
             <form action="" class="form" id="form1" method="post">
@@ -299,10 +300,12 @@
                     <div class="pairs">
                         <input class="el home-btn last-btn" id="home" type="button" value="Startseite" onclick="backPage(5)" onmouseover="this.style.backgroundColor='#db7b2b'" onmouseout="this.style.backgroundColor='#EEE'">
                     </div>
-            </section>
+                </section>
             </form>
         </section>
+        </div>
     </main>
+</div>
     <footer>
         <?php include_once "../components/footer.php" ?>
     </footer>

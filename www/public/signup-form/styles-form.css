@@ -18,34 +18,34 @@
 	--light: #EEE;
 }
 
-* {
-	margin: 0;
-	box-sizing: border-box;
-	font-family: "Fira sans", sans-serif;
-    font-size: medium;
-}
+
 
 body {
-	display: grid;
-	flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--light);
+    color: var(--bluedarkest);
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    text-align: center;
+    border: 1px solid red;
+}
+#main-page {
+    display: flex;
     justify-content: center;
     align-items: center;
-	min-height: 100vh;
-	color: #FFF;
-	background-color: var(--light);
-    font-size: larger;
 }
-
 .signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: block;
-    text-align: center; */
+    text-align: center; 
     padding: 2vw;
     margin: 0;
+    margin-top: 8vh;
     width: 40vw;
-    height: 86vh;
+    height: 74vh;
     border-radius: 20px;
     background-color: var(--dark);
     box-shadow: 2px 4px 10px var(--darkest);
@@ -54,7 +54,8 @@ body {
 .signup-page {
     /* flex: 1; */
     display: flex;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     height: 100%;
