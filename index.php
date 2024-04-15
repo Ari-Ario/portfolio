@@ -40,7 +40,7 @@ if (session_status() === PHP_SESSION_NONE){
                     <div class="device2">
                     <div id="image-container-macbook" class="container">
                         <img id="macbook-images" src="screenshot1.png" alt="Image 1" onmouseover="stopAutoChange()" onmouseout="startAutoChange()">
-                        <button class="popup-button-laptop" onclick="redirectToForm()">Quiz demo</button>
+                        <button class="popup-button-laptop" onclick="redirectToQuiz()">Quiz demo</button>
                     </div>
                     </div>
                 </div>

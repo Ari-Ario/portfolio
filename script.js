@@ -96,3 +96,7 @@ startAutoChange();
 function redirectToForm() {
   window.location.href = "signup-form/index-form.php";
 }
+
+function redirectToQuiz(){
+  window.location.href = "quiz/index-quiz.php";
+}
