@@ -1,0 +1,43 @@
+<?php ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="searchResults" class="search-results"></div>
+
+  <script>
+    window.onload = function() {
+      // Retrieve search results from URL parameter
+      var urlParams = new URLSearchParams(window.location.search);
+      var encodedResults = urlParams.get('results');
+      var searchResults = JSON.parse(decodeURIComponent(encodedResults));
+
+      displaySearchResults(searchResults);
+    }
+
+    function displaySearchResults(results) {
+      var searchResultsElement = document.getElementById("searchResults");
+      searchResultsElement.innerHTML = "";
+
+      if (results.length === 0) {
+        searchResultsElement.innerHTML = "No results found.";
+        return;
+      }
+
+      results.forEach(function(result) {
+        var resultLink = document.createElement("a");
+        resultLink.href = result.url;
+        resultLink.textContent = result.title;
+        searchResultsElement.appendChild(resultLink);
+        searchResultsElement.appendChild(document.createElement("br"));
+      });
+    }
+  </script>
+</body>
+</html>
+

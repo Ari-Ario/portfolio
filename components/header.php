@@ -8,18 +8,28 @@
     <!-- search container -->
     <section  id="search-container" onmouseover="showPopup()" onmouseout="hidePopup()">
         <form id="search-components" action="" method="get">
-            <input class="search" id="search-field" type="text" name="search" placeholder="Search">
-            <input class="search" id="search-btn" type="button" name="search" value="Go">
+            <input class="search" id="searchInput" type="text" name="search" placeholder="Search..." oninput="searchWebsite()">
+            <input class="search search-btn" id="search-btn" type="button" name="search" value="Go" onclick="searchWebsite()">
         </form>
+
         <section id="popup" class="popup" onmouseover="keepPopupOpen()" onmouseout="closePopup()">
             <section class="popup-content">
+            <a href="#">
+                <img src="../image1.png" alt="World News">
                 first
+            </a>
             </section>
             <section class="popup-content">
+            <a href="#">
+                <img src="../image2.png" alt="World News">
                 second
+            </a>
             </section>
             <section class="popup-content">
+            <a href="#">
+                <img src="../image3.png" alt="World News">
                 third
+            </a>
             </section>
         </section>
     </section>

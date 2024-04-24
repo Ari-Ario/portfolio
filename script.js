@@ -100,3 +100,25 @@ function redirectToForm() {
 function redirectToQuiz(){
   window.location.href = "quiz/index-quiz.php";
 }
+
+
+
+/////////////////SEARCH FUNCTION//////////////////////
+function searchWebsite() {
+  var searchQuery = document.getElementById("searchInput").value.trim().toLowerCase();
+  var pages = [
+    { title: "Home", url: "index.html", content: "Welcome to our website!" },
+    { title: "About", url: "about.html", content: "Learn more about our company." },
+    // Add more pages with their titles, URLs, and content
+  ];
+
+  var searchResults = pages.filter(function(page) {
+    return page.content.toLowerCase().includes(searchQuery);
+  });
+
+  // Encode search results as URL parameter
+  var encodedResults = encodeURIComponent(JSON.stringify(searchResults));
+
+  // Redirect to search results page with encoded results
+  window.location.href = "search-results.html?results=" + searchQuery;
+}
