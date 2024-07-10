@@ -10,6 +10,8 @@ if (session_status() === PHP_SESSION_NONE){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARI</title>
+    <link rel="stylesheet" href="dist/style.css">
+
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -54,5 +56,7 @@ if (session_status() === PHP_SESSION_NONE){
 </footer>
 
     <script src="script.js"></script>
+    <script src="dist/bundle.js"></script>
+
 </body>
 </html>

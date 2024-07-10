@@ -1,3 +1,4 @@
+import './styles.css';
 
 let isMouseOverPopup = false;
 
