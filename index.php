@@ -11,6 +11,7 @@ if (session_status() === PHP_SESSION_NONE){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARI</title>
     <link rel="stylesheet" href="dist/style.css">
+    <script src="script.js"></script>
 
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
