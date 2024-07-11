@@ -137,6 +137,9 @@ img {
     padding-top: 60px;
     padding-left: 10px;
 }
+/* .bildung p {
+    margin-top: 100px;
+} */
 #languages {
     grid-area: languages;
 }

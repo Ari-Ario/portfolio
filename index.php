@@ -22,6 +22,9 @@ if (session_status() === PHP_SESSION_NONE){
 </header>
 
     <main id="main">
+        <div class="apps" style="text-align: center;">
+            <p>E-commerce Web Application: <strong><a href="https://kleinhaendler.ch/" target="_blank" rel="noopener noreferrer">kleinhaendler.ch</a></strong></p>
+        </div>
         <section id="main-content">
             <div class="dm-width">
                 <div class="dm-device1">

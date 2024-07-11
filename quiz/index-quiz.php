@@ -57,9 +57,9 @@ session_destroy();
             <!-- <form action="/includes/test.php" method="POST">
             <input type="submit" value="table"> -->
 
-            <form action="/includes/mailer.php" method="POST">
+            <!-- <form action="/includes/mailer.php" method="POST">
                 <input type="submit" value="mailer">
-            </form>
+            </form> -->
             
             <?php
                 include "includes/db.php";

@@ -31,6 +31,7 @@
                     <br>xusrew.z@gmail.com
                     <br>Geburtsdatum: 21.09.1984
                     <br>Aufenthaltsbewilligung: B</p>
+                    <p>Portfolio: <a href="http://mostafanejad.ch/" target="_blank"><strong>mostafanejad.ch</strong></a></p>
             </section>
             <section id="experience" class="sections">
                 <h3>Beruflicher Werdegang</h3>
@@ -38,7 +39,7 @@
             <section id="empty" class="sections"></section>
             <section id="years" class="sections">
                 <h4 class="years">2023-2024</h4>
-                <h4 class="years">2021-2022</h4>
+                <h4 class="years"style="padding-top: 15px;">2021-2022</h4>
                 <h4 class="years" style="padding-top: 140px;">2016-2017</h4>
                 <h4 class="years" style="padding-top: 20px;">2013 und 2015</h4>
                 <h4 class="years">2014</h4>
@@ -48,8 +49,13 @@
                 <h4 class="years">2004-2007</h4>
             </section>
             <section id="jobs" class="sections">
-                <p><strong>Webentwicklung</strong></p>
-                <p style="padding-top: 10px;"><strong>1st and 2nd Level Support</strong>
+                <p><strong>E-commerce Web-Applikation: </strong>
+                <br>- <a href="https://kleinhaendler.ch/" target="_blank" rel="noopener noreferrer">kleinhaendler.ch</a>
+                <br>
+                <!-- - <a href="https://kleinhaendler.ch/" target="_blank" rel="noopener noreferrer">kleinhaendler.ch</a> -->
+                </p>
+
+                <p style="padding-top: 0;"><strong>1st und 2nd Level Support</strong>
                     <br>Zürcher Hochschule für angewandte Wissenschaften
                     <br>- Bearbeiten und Überwachen von Incidents
                     <br>- Bereitstellen, Installieren und Unterhalt von Geräten
@@ -72,20 +78,20 @@
             </section>
             <section id="years1" class="sections">
                 <h3 style="padding-left: 20px; text-align: center;">Aus-, Weiterbildung</h3>
-                <h4 class="years">2021-2022</h4>
+                <h4 class="years">2023-2024</h4>
                 <h4 class="years">2017-2020</h4>
                 <h4 class="years">2016</h4>
                 <h4 class="years">2010-2012</h4>
                 <h4 class="years">2004-2008</h4>
                 <h4 class="years">2005 und 2006</h4>
             </section>
-            <section id="bildung" class="sections">
-                <p><strong>Wirtschaftsinformatik</strong>, UZH</p>
+            <section id="bildung" class="sections bildung">
+                <p><strong>Webentwicklung</strong>, Opportunity, Zürich</p>
                 <p><strong>HF Diplom in Film</strong>, F und F Schule für Kunst und Design, Zürich</p>
                 <p><strong>Zwei Informatik-semester</strong>, ETHZ</p>
-                <p><strong>Postgraduate of Media</strong>, Independent Media Center of Kurdistan</p>
+                <p><strong>Aufbaustudien von Medien</strong>, Independent Media Center of Kurdistan</p>
                 <p><strong>Bachelor Informatik</strong>, Mathematics and Computer Department, Kurdistan</p>
-                <p><strong>Median Kurse (Leserbrief)</strong>, Sommersaison, Kurdistan</p>
+                <p><strong>Medienkurse (Leserbrief)</strong>, Sommersaison, Kurdistan</p>
             </section>
             <section id="languages" class="sections">
                 <h3 style="padding-left: 20px; text-align: center;">Sprach Kenntnisse</h3>
