@@ -5,3 +5,4 @@ node_modules/
 www/public/build/
 
 .DS_Store
+.env.production
