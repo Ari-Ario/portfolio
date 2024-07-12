@@ -1,8 +1,8 @@
 # Untrack node_modules folders
-node_modules/
+# node_modules/
 
 # Untrack compiled css files
-www/public/build/
+# www/public/build/
 
 .DS_Store
 .env.production
