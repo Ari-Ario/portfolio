@@ -156,30 +156,46 @@ $totalProcentQuiz = $totalStatisticSubject[0]['procent'];
 <script type="text/javascript">
 
     // first chart of the user
-        const xValues = ['Correct', 'False'];
-        const procent = <?php echo $procent; ?>;
-        const yValues = [procent, 100-procent];
-        const barColors = [
-        "#6B7280",
-        "#cc3232"
-        ];
+    const xValues = ['Correct', 'False'];
+    const procent = <?php echo $procent; ?>;
+    const yValues = [procent, 100-procent];
+    const barColors = [
+    "#6B7280",
+    "#cc3232"
+    ];
 
-        new Chart("myChart", {
-        type: "pie",
-        data: {
-            labels: xValues,
-            datasets: [{
-            backgroundColor: barColors,
-            data: yValues
-            }]
-        },
-        options: {
-            title: {
-            display: true,
-            text: "Quiz result"
-            }
+    new Chart("myChart", {
+    type: "pie",
+    data: {
+        labels: xValues,
+        datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+        }]
+    },
+    options: {
+        title: {
+        display: true,
+        text: "Quiz result"
         }
-        });
+    }
+    });
+    function incrementId(){
+        const id = document.getElementById('question-id');
+        console.log(id)
+        id.value= id+1
+        console.log(id)
+    }
+
+    function openPopup() {
+        let popup = document.getElementById("popup");
+        popup.style.display = "block";
+    }
+
+    function closePopup() {
+        let popup = document.getElementById("popup");
+        popup.style.display = "none";
+    }
 
 </script>
 </body>
