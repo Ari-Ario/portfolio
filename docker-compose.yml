@@ -22,9 +22,9 @@ services:
       - ./:/var/www/php
       - ./docker/php/local_php.ini:/usr/local/etc/php/conf.d/local_php.ini         
     environment:
-      DB_NAME: library
+      DB_DATABASE: library
       DB_HOST: mysql
-      DB_USER: webDev
+      DB_USERNAME: webDev
       DB_PASSWORD: webDev
       PHP_INI_SCAN_DIR: "/usr/local/etc/php/custom.d:/usr/local/etc/php/conf.d"      
     depends_on:
