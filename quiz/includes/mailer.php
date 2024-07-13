@@ -15,7 +15,7 @@ require '../vendor/autoload.php';
 
 
 // Check if today is the first day of the month
-if (date('j') === '19') {
+if (date('j') === '1') {
     // Execute the monthly task here
     $allEmails = callEmails($dbConnection);
     // print_r($allEmails);
@@ -69,13 +69,13 @@ function sendEmail($name, $email, $message){
 
     //Password to use for SMTP authentication
     $pass = getenv('PASSWORD', true) ?: getenv('PASSWORD');
-    $mail->Password = '';
+    $mail->Password = getenv('PASSWORD');
 
     //Set who the message is to be sent from
     //Note that with gmail you can only use your account address (same as `Username`)
     //or predefined aliases that you have configured within your account.
     //Do not use user-submitted addresses in here
-    $mail->setFrom('xusrew.z@gmail.com', 'ARAM');
+    $mail->setFrom('xusrew.z@gmail.com', 'ARI');
 
     //Set an alternative reply-to address
     //This is a good place to put user-submitted addresses
