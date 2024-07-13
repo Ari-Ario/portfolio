@@ -52,7 +52,6 @@ $totalProcentQuiz = $totalStatisticSubject[0]['procent'];
     <link rel="stylesheet" href="../styles-quiz.css">
 
     <script src="../script-quiz.js"></script>
-    <script src="../../script.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script type="text/javascript">
@@ -180,22 +179,22 @@ $totalProcentQuiz = $totalStatisticSubject[0]['procent'];
         }
     }
     });
-    function incrementId(){
-        const id = document.getElementById('question-id');
-        console.log(id)
-        id.value= id+1
-        console.log(id)
-    }
+    // function incrementId(){
+    //     const id = document.getElementById('question-id');
+    //     console.log(id)
+    //     id.value= id+1
+    //     console.log(id)
+    // }
 
-    function openPopupReport() {
-        let popup = document.getElementById("popup");
-        popup.style.display = "block";
-    }
+    // function openPopupReport() {
+    //     let popup = document.getElementById("popup");
+    //     popup.style.display = "block";
+    // }
 
-    function closePopupReport() {
-        let popup = document.getElementById("popup");
-        popup.style.display = "none";
-    }
+    // function closePopupReport() {
+    //     let popup = document.getElementById("popup");
+    //     popup.style.display = "none";
+    // }
 
 </script>
 </body>
