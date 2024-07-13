@@ -49,8 +49,9 @@ $totalProcentQuiz = $totalStatisticSubject[0]['procent'];
     <title>report</title>
     <link rel="stylesheet" href="../styles-quiz.css">
     <link rel="stylesheet" href="../../styles.css">
-    <link rel="stylesheet" href="styles-quiz.css">
+    <link rel="stylesheet" href="../styles-quiz.css">
 
+    <script src="../script-quiz.js"></script>
     <script src="../../script.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
