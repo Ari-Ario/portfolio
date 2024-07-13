@@ -121,13 +121,13 @@ $totalProcentQuiz = $totalStatisticSubject[0]['procent'];
             <div id="piechart" class="piechart" style="  max-width:30%;"></div>
         </section>
         <div id="register">
-            <button id="register-btn" class="nav-link" onclick="openPopup()">Newsletter</button>
+            <button id="register-btn" class="nav-link" onclick="openPopupReport()">Newsletter</button>
         </div>
         <section id="popup" class="popup" style="margin: 0; padding: 0;">
             <section class="modal-dialog popup-content" role="document">
                 
                     <section class="closing">
-                        <span class="close" onclick="closePopup()">&times;</span>
+                        <span class="close" onclick="closePopupReport()">&times;</span>
                     </section>
 
                     <section class="modal-body">
@@ -152,7 +152,6 @@ $totalProcentQuiz = $totalStatisticSubject[0]['procent'];
 </section>
 <?php include "../../components/footer.php" ?>
 
-<script src="../script-quiz.js"></script>
 <script type="text/javascript">
 
     // first chart of the user
@@ -187,12 +186,12 @@ $totalProcentQuiz = $totalStatisticSubject[0]['procent'];
         console.log(id)
     }
 
-    function openPopup() {
+    function openPopupReport() {
         let popup = document.getElementById("popup");
         popup.style.display = "block";
     }
 
-    function closePopup() {
+    function closePopupReport() {
         let popup = document.getElementById("popup");
         popup.style.display = "none";
     }

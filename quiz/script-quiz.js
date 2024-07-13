@@ -6,12 +6,12 @@ function incrementId(){
     console.log(id)
 }
 
-function openPopup() {
+function openPopupReport() {
     let popup = document.getElementById("popup");
     popup.style.display = "block";
 }
 
-function closePopup() {
+function closePopupReport() {
     let popup = document.getElementById("popup");
     popup.style.display = "none";
 }
