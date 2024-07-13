@@ -30,6 +30,19 @@
         <div id="computer-content">
             <h3>Application-,Web Development</h3>
             <div id="bars" data-animation="slide-in-right">
+
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:100%">
+                    <div class="tag bold grid-bar">Laravel</div>
+                </div>
+                </div>
+
+                <div class="bar grid-bar">
+                <div class="bar-fill" style="width:100%">
+                    <div class="tag bold grid-bar">Vue Js</div>
+                </div>
+                </div>
+                
                 <div class="bar grid-bar">
                 <div class="bar-fill" style="width:100%">
                     <div class="tag bold grid-bar">CSS</div>
