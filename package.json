@@ -4,7 +4,7 @@
   "description": "This is a simple php docker-compose setup with nginx. With this setup we will build a small website. The goal of this project is not to build the fanciest website, but to apply our new learnt topics php and sass.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
