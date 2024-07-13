@@ -6,7 +6,7 @@ include dirname(__DIR__) . "/utils/helper.php";
 $dbName = getenv('DB_DATABASE') ?: 'forge';
 $dbUser = getenv('DB_USERNAME') ?: 'forge';
 $dbPassword = getenv('DB_PASSWORD') ?: '3cRRjOpHo6lxqtbqMwM2';
-$dbHost = getenv('DB_HOST') ?: 'mysql';
+$dbHost = getenv('DB_HOST') ?: '127.0.0.1';
 $dbPort = getenv('DB_PORT') ?: '3306';
 
 echo "DB_HOST: $dbHost\n";
