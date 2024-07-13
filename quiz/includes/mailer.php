@@ -69,8 +69,9 @@ function sendEmail($name, $email, $message){
 
     //Password to use for SMTP authentication
     $pass = getenv('PASSWORD', true) ?: getenv('PASSWORD');
-    $mail->Password = getenv('PASSWORD');
-
+    // $mail->Password = getenv('PASSWORD');
+    $mail->Password = 'dyuh dayw hcuz mmae';
+    
     //Set who the message is to be sent from
     //Note that with gmail you can only use your account address (same as `Username`)
     //or predefined aliases that you have configured within your account.
