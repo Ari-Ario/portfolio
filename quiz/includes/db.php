@@ -1,12 +1,17 @@
 <?php
 include dirname(__DIR__) . "/utils/helper.php";
-    // Connection credentials for the database
-    // You can find the credentials in docker-compose.yml
-    $dbName = getenv('DB_DATABASE');
-    $dbUser = getenv('DB_USERNAME');
-    $dbPassword = getenv('DB_PASSWORD');
-    $dbHost = getenv('DB_HOST');
-    $dbPort = getenv('DB_PORT');
+
+// Connection credentials for the database
+// You can find the credentials in docker-compose.yml
+$dbName = getenv('DB_DATABASE');
+$dbUser = getenv('DB_USERNAME');
+$dbPassword = getenv('DB_PASSWORD');
+$dbHost = getenv('DB_HOST');
+$dbPort = getenv('DB_PORT');
+echo "DB_HOST: $dbHost\n";
+echo "DB_PORT: $dbPort\n";
+echo "DB_DATABASE: $dbName\n";
+echo "DB_USERNAME: $dbUser\n";
 try {
     // Create a connection to the database
     $dbConnection = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName;charset=utf8", $dbUser, $dbPassword);
