@@ -9,10 +9,10 @@ $dbPassword = getenv('DB_PASSWORD') ?: '3cRRjOpHo6lxqtbqMwM2';
 $dbHost = getenv('DB_HOST') ?: '127.0.0.1';
 $dbPort = getenv('DB_PORT') ?: '3306';
 
-echo "DB_HOST: $dbHost\n";
-echo "DB_PORT: $dbPort\n";
-echo "DB_DATABASE: $dbName\n";
-echo "DB_USERNAME: $dbUser\n";
+// echo "DB_HOST: $dbHost\n";
+// echo "DB_PORT: $dbPort\n";
+// echo "DB_DATABASE: $dbName\n";
+// echo "DB_USERNAME: $dbUser\n";
 try {
     // Create a connection to the database
     $dbConnection = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName;charset=utf8", $dbUser, $dbPassword);
