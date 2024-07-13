@@ -3,9 +3,9 @@ include dirname(__DIR__) . "/utils/helper.php";
 
 // Connection credentials for the database
 // You can find the credentials in docker-compose.yml
-$dbName = getenv('DB_DATABASE') ?: 'library';
-$dbUser = getenv('DB_USERNAME') ?: 'webDev';
-$dbPassword = getenv('DB_PASSWORD') ?: 'webDev';
+$dbName = getenv('DB_DATABASE') ?: 'forge';
+$dbUser = getenv('DB_USERNAME') ?: 'forge';
+$dbPassword = getenv('DB_PASSWORD') ?: '3cRRjOpHo6lxqtbqMwM2';
 $dbHost = getenv('DB_HOST') ?: 'mysql';
 $dbPort = getenv('DB_PORT') ?: '3306';
 
