@@ -41,9 +41,7 @@ include "data-collector.php";
     // prettyPrint($question);
     // exit();
 ?>
-<header >
-        <?php include_once "../../components/header.php" ?>
-</header>
+
 <section id="form-quiz">
     <section id="form-container">
         <section class="header-form">

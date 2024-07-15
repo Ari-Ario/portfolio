@@ -17,7 +17,7 @@ try {
     // Create a connection to the database
     $dbConnection = new PDO("mysql:host=$dbHost;port=$dbPort;dbname=$dbName;charset=utf8", $dbUser, $dbPassword);
     $dbConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected";
+    // echo "Connected";
 
 } catch (PDOException $e) {
     die("Connection Error: " . $e->getMessage()); // display error message

@@ -101,3 +101,15 @@ function redirectToForm() {
 function redirectToQuiz(){
   window.location.href = "quiz/index-quiz.php";
 }
+
+
+
+
+function saveSearchQuery() {
+  const searchQuery = document.getElementById('search-field').value;
+  sessionStorage.setItem('searchQuery', searchQuery);
+  // Redirect to root before submitting the form
+  // window.location.href = '/';
+  //return false; // Prevent form submission
+  hidePopup()
+}

@@ -130,9 +130,9 @@ a {
   width: 100%;
   height: 100%;
   background-color: var(--bluedarkest);
-  opacity: 80%;
+  /* opacity: 90%; */
   border-radius: 8px;
-  padding: 18px;
+  padding: 4px;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
@@ -144,8 +144,9 @@ a {
 }
 
 .popup-content {
-  border: 1px solid white;
-  
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
 }
 
 /* header RESUME--------------------------- */
@@ -520,6 +521,7 @@ a {
       top: 6vh;
     }
 
+
     #header-homepage {
       padding: 0 2vw 0 5vw;
     }
@@ -533,6 +535,14 @@ a {
 
     img {
       max-width: 90vw;
+    }
+    /* .popup {
+      z-index: 100000;
+
+    } */
+
+    .popup-content {
+      padding-right: 20px;
     }
 
     /* main ------------------- */

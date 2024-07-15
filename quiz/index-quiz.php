@@ -19,9 +19,9 @@ session_destroy();
 
 </head>
 <body>
-<header >
-        <?php include_once "../components/header.php" ?>
-</header>
+    <header >
+            <?php include_once "../components/header.php" ?>
+    </header>
     <main id="main">
     <section id="main-content">
 
@@ -101,6 +101,8 @@ session_destroy();
     <?php include_once "../components/footer.php" ?>
 </footer>
 <script src="script-quiz.js"></script>
+<script src="../script.js"></script>
+
 <script>
     const xValues = ["<?php echo $firstTopic; ?>", "<?php echo $secondTopic ?>", "<?php echo $thirdTopic ?>"];
     const yValues = [<?php echo $firstStatistic ?>, <?php echo $secondStatistic ?>, <?php echo $thirdStatistic ?>];

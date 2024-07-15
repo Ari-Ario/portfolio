@@ -7,20 +7,31 @@
 
     <!-- search container -->
     <section  id="search-container" onmouseover="showPopup()" onmouseout="hidePopup()">
-        <form id="search-components" action="" method="get">
-            <input class="search" id="search-field" type="text" name="search" placeholder="Search">
-            <input class="search" id="search-btn" type="button" name="search" value="Go">
-        </form>
-        <section id="popup" class="popup" onmouseover="keepPopupOpen()" onmouseout="closePopup()">
-            <section class="popup-content">
-                first
-            </section>
-            <section class="popup-content">
-                second
-            </section>
-            <section class="popup-content">
-                third
-            </section>
+
+    <form id="search-components" action="/search-results.php" method="post"  onsubmit="return saveSearchQuery()">
+        <input class="search" id="search-field" type="text" name="search" placeholder="Search">
+        <input class="search" id="search-btn" type="submit" name="submit" value="Go">
+    </form>
+
+
+        <section id="popup" class="popup" onmouseover="keepPopupOpen()" onmouseout="closePopup()" style="display: flex; flex-direction: row;">
+
+        <section class="popup-content" id="first">
+            <a href="page1.html">
+                <img src="/components/image1.png" alt="Image 1" style="height: 60px;">
+            </a>
+        </section>
+        <section class="popup-content" id="second">
+            <a href="page2.html">
+                <img src="/components/image2.png" alt="Image 2" style="height: 60px;">
+            </a>
+        </section>
+        <section class="popup-content" id="third">
+            <a href="page3.html">
+                <img src="/components/image3.png" alt="Image 3" style="height: 60px;">
+            </a>
+        </section>
+
         </section>
     </section>
     

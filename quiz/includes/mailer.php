@@ -102,7 +102,36 @@ function sendEmail($name, $email, $message){
     $mail->Body = "
         Email: $email
         Dear $name 
-        Message: Here is our NEWALETTER $content" . '<html><br><body><h1>Webpage with Visualization</h1><img src="' . $chartImage . '" alt="Chart"></body></html>';
+        Sehr geehrte Damen und Herren
+        Mein Ziel ist es mein Potential in einer sinnstiftenden Tätigkeit effektiv einzubringen und
+        michweiterzuentwickeln. Ihre vakante Stelle spricht mich sehr an, weil ich in dieser meine IT-
+        Kenntnisse in Kombination mit Beratungsleistungzur Geltung bringen kann. Wenn ein Web-
+        Applikations-entwicklwer in ihr Team passt, dann bin ich die richtige Person für die Stelle.
+        Bevor ich 2014 in die Schweiz kam, habe ich im Irak Informatik studiert. An der ETH und
+        UniZürich habe ich meine Fachkenntnisse mit meinem Bachelor der Mathematik und
+        Informatik abgeglichen und meine Informatikkenntnisse vertiefen können, z.B. in
+        Programmiersprachen wie Python, PHP, JavaScript, SQL. u.a. An der ZHAW habe ich 2021-
+        2022 als ICT-Support 1st-, 2nd-Levelgearbeitet. Dabei konnte ich viel Erfahrung sammeln. In
+        einfachen Worten verfüge ich über solide Kenntnisse im Bereich Softwarentwicklung, um
+        Design, Entwicklung und Deployment auszuführen. Momentan besuche ich einen Kurs für
+        applikations-, web-Entwicklung bei der Stadt Zürich.
+
+        Als verlässlicher und leistungsbereiter Mitarbeiter zeichne ich mich durch eine strukturierte
+        Arbeitsweise aus und habe ich hohe Ansprüche an die Qualität meiner Arbeit. Ich
+        beherrsche mehrere Sprachen stilsicher in Wort und Schrift, darunter Deutsch und Englisch.
+        Neuem gegenüber sehr offen und interessiert, nehme ich die Herausforderungen mit Freude
+        an und bin ich bestrebt die optimalen Lösungen zu finden. Nicht nur inhaltlich auch
+        betreffend Arbeitszeiten und Arbeitsschichten bin zu 100% zeitlich flexibel.
+        Bei meiner Neuorientierung werde ich unterstützt und habe ich die Möglichkeit mich via ein
+        finanziertes dreimonatiges Praktikum einzuarbeiten und Sie von meiner Person zu
+        überzeugen.
+        Ich freue mich Ihr Interesse geweckt zu haben. Gerne gebe ich Ihnen in einem persönlichen
+        Gespräch mehr von meiner Person preis. Ich werde gerne einige meiner Projekte euch
+        präsentieren.
+
+        Freundliche Grüsse
+        Ismail Mostafanejad";
+        //Message: Here is our NEWALETTER $content" . '<html><br><body><h1>Webpage with Visualization</h1><img src="' . $chartImage . '" alt="Chart"></body></html>';
 
     //Attach an image file
     //$mail->addAttachment('images/phpmailer_mini.png');
